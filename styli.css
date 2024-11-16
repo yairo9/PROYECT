@@ -107,7 +107,7 @@ body{
 .header .icons div:hover{
     color:var(--main-color); 
 }
-  
+
 
 #menu-btn{
     display: none;
@@ -222,7 +222,8 @@ body{
 .home .content h3{
     font-size: 6rem;
     text-transform: uppercase;
-    color: #ad0505 ;
+    color: #dbc013 ;
+    box-shadow: #FFF 200px;
 }
 
 .home .content p{
@@ -230,7 +231,7 @@ body{
     font-weight: lighter;
     line-height: 1.8;
     padding: 1rem 0;
-    color:#3807be;
+    color:#ffffff;
 
 }
 
