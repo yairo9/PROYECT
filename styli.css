@@ -211,6 +211,7 @@ body{
     background: url(/imagenes/minoxidil.jpg) no-repeat;
     background-size: cover;
     background-position: center ;
+    padding: 0px;
 }
 
 
@@ -366,6 +367,11 @@ body{
     font-weight: lighter;
     font-size: 1.5rem; 
 } */
+
+.mapa {
+    display: flex;
+    padding: 300px;
+}
 
  
 
