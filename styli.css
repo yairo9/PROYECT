@@ -102,6 +102,7 @@ body {
     color: var(--main-color); /* Cambia de color al pasar sobre los iconos */
 }
 
+
 #menu-btn {
     display: none; /* Oculta el menú inicialmente */
 }
@@ -205,7 +206,8 @@ body {
     align-items: center;
     background: url(/imagenes/minoxidil.jpg) no-repeat; /* Imagen de fondo */
     background-size: cover;
-    background-position: center;
+    background-position: center ;
+    padding: 200px;
 }
 
 .home .content {
@@ -215,7 +217,8 @@ body {
 .home .content h3 {
     font-size: 6rem;
     text-transform: uppercase;
-    color: #ad0505;
+    color: #dbc013 ;
+    box-shadow: #FFF 200px;
 }
 
 .home .content p {
@@ -223,7 +226,8 @@ body {
     font-weight: lighter;
     line-height: 1.8;
     padding: 1rem 0;
-    color: #3807be;
+    color:#ffffff;
+
 }
 
 /* Sección sobre nosotros */
@@ -552,11 +556,18 @@ body {
     padding: 0;
 }
 
+.mapa {
+    display: flex;
+    padding: 300px;
+}
+
+ 
 .footer-contact li {
     font-size: 1.6rem;
     color: #ccc;
     margin-bottom: 0.5rem;
 }
+
 
 /* Estilo para el pie de página inferior */
 .footer-bottom {

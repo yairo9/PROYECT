@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BarberKng</title>
     <link rel="stylesheet" href="styli.css">
-
-
-     
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-    
     <header class="header">
-        <a href="#" class="logo"> 
-            <img src="imagenes/Logo barber.png" alt="">
-        </a>
+        <a href="#" class="logo">
+            <img src="imagenes/Logo barber.png" alt=""></a>
         <nav class="navbar">
-            <a href="#home">INICIO</a>
             <a href="#about">NOSOTROS</a>
             <a href="#menu">CORTES</a>
             <a href="#products">PRODUCTOS</a>
             <a href="#contact">CONTACTO</a>
-            <a href="#citas" class="citas-btn">CITASs</a>
+            <a href="#citas" class="citas-btn">CITAS</a>
             <a href="#registro" class="registro-btn">
-                <i class="fas fa-user-plus"></i> Registro
-            </a>
+            <i class="fas fa-user-plus"></i> Registro</a>
+          <a href="#blogs">Sedes</a>
         </nav>
 
         <div class="icons">
@@ -62,42 +56,30 @@
                 </div>
             </div>
             <div class="cart-item">
-                <!-- #aqui va imagen -->
-                <span class="content"></span>
-                <img src="imagenes/cepillo-barbero-fade-captain-cook-negro_512x512.webp" alt="">
-                <div class="content">
-                    <h3>cart item 03</h3>
-                    <div class="price">$15.99/-</div>
-                </div>
             </div>
-            <div class="cart-item">
-                <!-- #aqui va imagen -->
-                <span class="content"></span>
-                <img src="imagenes/cepillo-barbero-fade-captain-cook-negro_512x512.webp" alt="">
-                <div class="content">
-                    <h3>cart item 04</h3>
-                    <div class="price">$15.99/-</div>
-                </div>
-            </div>
-            <a href="#" class="btn"> checkout now</a>
-            
-            
+            <a href="#" class="btn"> Comprar ahora</a>
+
+
         </div>
     </header>
 
 
     <!-- inicio -->
-     <section class="home" id="home">
+    <section class="home" id="home">
         <div class="content">
-            <h3>Minoxidil para tu cabello</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias animi reprehenderit harum.
-                 Neque at ad debitis eum repellendus aut! Nam impedit debitis nihil saepe quam tenetur
-                  magnam aspernatur architecto earum!</p>
-                  <a href="#" class="btn">Get your now</a>
-        </div>
-     </section>
+            <h3>Nosotros</h3>
+            <p>Nuestra barbería en Medellín es mucho más que un lugar para cortar cabello y arreglar
+                barbas: es un espacio donde la tradición y el estilo moderno se encuentran. Nos enorgullece
+                ofrecer un servicio personalizado, enfocándonos en cada detalle para realzar tu estilo
+                único. Con un equipo de barberos altamente capacitados, brindamos cortes clásicos, diseños
+                innovadores y cuidados especializados para la barba, todo en un ambiente relajado y
+                acogedor. Aquí, nuestra misión es que cada cliente se sienta renovado y con confianza.
+                ¡Bienvenidos a la mejor experiencia de barbería en Medellín!</p>
 
-     <!-- fin de inicio -->
+        </div>
+    </section>
+
+    <!-- fin de inicio -->
 
      <!-- about section inicio -->
       <section class="about" id="about">
@@ -142,138 +124,146 @@
 
             <div class="box">
                 <img src="imagenes/corte1.jpg" alt="">
-                <h3>cera minoxidil</h3>
+                <h3>Corte básico</h3>
                 <div class="price">14.000$ <span>15.000</span></div>
-                <a href="#" class="btn">add to cart</a>
             </div>
             <div class="box">
                 <img src="imagenes/corte2.jpg" alt="">
-                <h3>cera minoxidil</h3>
+                <h3>Cejas</h3>
                 <div class="price">14.000$ <span>15.000</span></div>
-                <a href="#" class="btn">add to cart</a>
             </div>
             <div class="box">
                 <img src="imagenes/corte3.jpg" alt="">
-                <h3>cera minoxidil</h3>
+                <h3>Barba</h3>
                 <div class="price">14.000$ <span>15.000</span></div>
-                <a href="#" class="btn">add to cart</a>
             </div>
             <div class="box">
                 <img src="imagenes/corte4.jpg" alt="">
-                <h3>cera minoxidil</h3>
+                <h3>Tintura</h3>
                 <div class="price">14.000$ <span>15.000</span></div>
-                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+        <button type="button"
+            class="inline-block rounded border-2 border-neutral-50 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-300 hover:text-neutral-200 focus:border-neutral-300 focus:text-neutral-200 focus:outline-none focus:ring-0 active:border-neutral-300 active:text-neutral-200 dark:hover:bg-neutral-600 dark:focus:bg-neutral-600"
+            data-twe-ripple-init data-twe-ripple-color="light">Mas informacion</button>
+
+
+    </section>
+
+
+
+
+    <!-- menu section fin -->
+
+    <section class="products" id="products">
+
+        <h1 class="heading">nuestros<span> productos</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="imagenes/producto5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>fresh coffe</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$14.000 <span> #25.000 </span></div>
+                </div>
             </div>
             <div class="box">
-                <img src="imagenes/corte4.jpg" alt="">
-                <h3>cera minoxidil</h3>
-                <div class="price">14.000$ <span>15.000</span></div>
-                <a href="#" class="btn">add to cart</a>
-            </div>
-        </div>
-    
-
-     </section>
-
-
-     
-
-<!-- menu section fin -->
-
-<section class="products" id="products">
-
-    <h1 class="heading">nuestros<span> productos</span></h1>
-
-    <div class="box-container">
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-            <div class="image">
-                <img src="imagenes/producto5.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>fresh coffe</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
                 </div>
-            <div class="price">$14.000 <span> #25.000 </span></div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-            <div class="image">
-                <img src="imagenes/producto5.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>fresh coffe</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+                <div class="image">
+                    <img src="imagenes/producto5.jpg" alt="">
                 </div>
-            <div class="price">$14.000 <span> #25.000 </span></div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-            <div class="image">
-                <img src="imagenes/producto5.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>fresh coffe</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+                <div class="content">
+                    <h3>fresh coffe</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$14.000 <span> #25.000 </span></div>
                 </div>
-            <div class="price">$14.000 <span> #25.000 </span></div>
             </div>
-        </div>
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-            <div class="image">
-                <img src="imagenes/producto5.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>fresh coffe</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
                 </div>
-            <div class="price">$14.000 <span> #25.000 </span></div>
+                <div class="image">
+                    <img src="imagenes/producto5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>fresh coffe</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$14.000 <span> #25.000 </span></div>
+                </div>
             </div>
-        </div>
-        
-        
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="imagenes/producto5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>fresh coffe</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$14.000 <span> #25.000 </span></div>
+                </div>
+            </div>
 
 
-    </div>
+
+
+        </div>
+
+        <!-- Mapa -->
+        <section class="content mapa">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1UghUE7HuOiYwNQYHlobXSNH_d7Oc10Q&ehbc=2E312F&noprof=1"
+                width="100%" height="350"></iframe>
+        </section>
+
+
+    </section>
+    <!--Seccion de derechos de autor-->
+    <footers>
+        <div class="w-full bg-blue-950 p-4 text-center footer">
+            © 2024 Copyright: Kingdom barber
+        </div>
+        </footer>
 
 
 </section>
@@ -460,12 +450,13 @@
     
     
       <!-- fin de footer -->
-  
 
 
 
-    
 
-   <script src="scrip.js"></script>    
+
+
+        <script src="scrip.js"></script>
 </body>
+
 </html>
