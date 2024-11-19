@@ -13,8 +13,7 @@
     box-sizing: border-box; /* Incluye bordes y rellenos en el tamaño total */
     outline: none; border: none; /* Elimina contornos y bordes por defecto */
     text-decoration: none; /* Elimina subrayados en textos */
-    text-transform: capitalize; /* Capitaliza el texto */
-    transition: 2s linear; /* Aplica transición suave */
+    transition: 0s linear; /* Aplica transición suave */
 }
 
 html {
@@ -73,7 +72,7 @@ body {
     border-bottom: var(--border); /* Borde inferior */
     position: fixed; /* Fija el encabezado */
     top: 0; left: 0; right: 0; /* Fija en la parte superior de la página */
-    z-index: 1000; /* Prioridad sobre otros elementos */
+    z-index: 1000; /* Prioridad sobre otros el  ementos */
 }
 
 .header .logo img {
@@ -86,9 +85,7 @@ body {
 }
 .header .navbar a:hover {
     color: var(--main-color); /* Cambia de color al pasar sobre los enlaces */
-    border-bottom: .1rem solid var(--main-color); /* Subraya con borde */
-    border: 1px solid #fff; /* Borde */
-    padding-bottom: .5rem; /* Espacio inferior */
+    transform: scale(1.1);
 }
 
 .header .icons div {
@@ -204,10 +201,10 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(/imagenes/minoxidil.jpg) no-repeat; /* Imagen de fondo */
+    background: url(/imagenes/Fondobarberbia.jpg) no-repeat; /* Imagen de fondo */
     background-size: cover;
     background-position: center ;
-    padding: 200px;
+    padding: 100px;
 }
 
 .home .content {
@@ -215,19 +212,33 @@ body {
 }
 
 .home .content h3 {
-    font-size: 6rem;
+    font-size: 5rem;
     text-transform: uppercase;
     color: #dbc013 ;
-    box-shadow: #FFF 200px;
 }
 
 .home .content p {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: lighter;
     line-height: 1.8;
     padding: 1rem 0;
     color:#ffffff;
 
+}
+
+.redessociales{
+    position: fixed;
+    z-index: 999;
+    bottom: 20px;
+    right: 20px;
+}
+
+.redessociales img{
+    padding: 8px;
+}
+
+.redessociales img:hover{
+    transform: scale(1.1);
 }
 
 /* Sección sobre nosotros */
@@ -266,20 +277,26 @@ body {
     line-height: 1.8;
 }
 
-/* Contenedor de la sección de menú */
+/* Contenedor de la sección de Cortes */
+
+.menu{
+    padding: 50px;
+}
+
 .menu .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
+    gap: 1rem;
+    padding: 0px;
 }
 
 .menu .box-container .box {
-    padding: 2rem;
+    padding: 1rem;
     border: var(--border); /* Borde definido en variables */
 }
 
 .menu .box-container .box img {
-    height: 20rem; /* Tamaño de imagen del menú */
+    height: 30rem; /* Tamaño de imagen del menú */
 }
 
 .menu .box-container .box h3 {
@@ -308,7 +325,13 @@ body {
     color: var(--black); /* Cambia el color de los elementos internos */
 }
 
+
 /* Contenedor de la sección de productos */
+
+.products{
+    padding: 50px;
+}
+
 .products .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -334,7 +357,7 @@ body {
 /* Sección de Citas */
 .citas {
     padding: 3rem 2rem;
-    background-color: #741515;
+    background-color: #474747;
     text-align: center;
 }
 
@@ -398,7 +421,7 @@ body {
 /* Contenedor principal de la sección de registro de usuario */
 .registro {
     padding: 3rem 2rem; /* Espaciado interno */
-    background-color: #f9f9f9; /* Fondo claro */
+    background-color: #414141; /* Fondo claro */
     text-align: center; /* Centra el contenido */
 }
 
@@ -483,55 +506,13 @@ body {
     margin-bottom: 2rem;
 }
 
-/* Estilo para las redes sociales */
-.footer-social {
-    flex: 1;
-    min-width: 250px;
-    margin: 1rem;
-}
-
-.footer-social h4 {
-    font-size: 2rem;
-    color: #e60000; /* Rojo barbería */
-    margin-bottom: 1rem;
-}
-
-.footer-social ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-social li {
-    font-size: 1.6rem;
-    color: #ccc;
-    margin-bottom: 0.5rem;
-}
-
-.footer-social a {
-    color: #fff;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-
-.footer-social a i {
-    margin-right: 10px;
-    font-size: 1.8rem;
-}
-
-.footer-social a:hover {
-    color: #e60000; /* Rojo barbería */
-}
-
-.footer-social a i:hover {
-    color: #e60000; /* Rojo barbería en el ícono */
-}
 
 /* Estilo para la información de la barbería y contacto */
 .footer-info {
     flex: 2;
     min-width: 300px;
     margin: 1rem;
+    text-align: center;
 }
 
 .footer-details h3 {
@@ -558,7 +539,6 @@ body {
 
 .mapa {
     display: flex;
-    padding: 300px;
 }
 
  
@@ -572,12 +552,12 @@ body {
 /* Estilo para el pie de página inferior */
 .footer-bottom {
     background-color: #1c1c1c; /* Fondo más oscuro para el pie */
-    padding: 1rem;
+    padding: 1.8rem;
     text-align: center;
 }
 
 .footer-bottom p {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     color: #ccc;
 }
 
