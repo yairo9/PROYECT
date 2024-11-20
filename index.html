@@ -9,9 +9,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 </head>
 
-<body>
+<body class="Alkatra">
     <header class="header">
         <a href="#" class="logo max-w-xs transition duration-150 ease-in-out hover:scale-110">
             <img src="imagenes/Logo barber.png" alt="Logo barberia"></a>
@@ -21,9 +22,52 @@
             <a href="#citas" class="citas-btn">Citas</a>
             <a href="#products">Tienda</a>
             <a href="#contact">Contactos</a>
-            <a href="#registro" class="registro-btn">
-                <i class="fas fa-user-plus"></i> Registro</a>
             <a href="#mapa">Sedes</a>
+            <a href="#registro" class="registro-btn" data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" >
+                <i class="fas fa-user-plus"></i> Ingreso</a>
+                
+  
+  <!-- Main modal -->
+  <div id="authentication-modal" aria-hidden="true" class="hidden overflow-x-hidden overflow-y-auto fixed h-modal md:h-full top-4 left-0 right-0 md:inset-0 z-50 justify-center items-center">
+    <div class="relative w-full max-w-md px-4 h-full md:h-auto">
+        <!-- Modal content -->
+        <div class="bg-white rounded-lg shadow relative dark:bg-gray-700">
+            <div class="flex justify-end p-2">
+                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-toggle="authentication-modal">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
+                </button>
+            </div>
+            <form class="space-y-6 px-6 lg:px-8 pb-4 sm:pb-6 xl:pb-8" action="#">
+                <h3 class="text-xl font-medium text-gray-900 dark:text-white">Ingresa a la plataforma</h3>
+                <div>
+                    <label for="email" class="text-sm font-medium text-gray-900 block mb-2 dark:text-gray-300">Correo electronico</label>
+                    <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="nombre@kingdombarber.com" required="">
+                </div>
+                <div>
+                    <label for="password" class="text-sm font-medium text-gray-900 block mb-2 dark:text-gray-300">Contraseña</label>
+                    <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required="">
+                </div>
+                <div class="flex justify-between">
+                    <div class="flex items-start">
+                        <div class="flex items-center h-5">
+                            <input id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded dark:bg-gray-600 dark:border-gray-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required="">
+                        </div>
+                        <div class="text-sm ml-3">
+                        <label for="remember" class="font-medium text-gray-900 dark:text-gray-300">Recuerdame</label>
+                        </div>
+                    </div>
+                    <a href="#" class="text-sm text-blue-700 hover:underline dark:text-blue-500">¿Olvidaste contraseña?</a>
+                </div>
+                <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Ingresar</button>
+                <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
+                    ¿No estas registrado? <a href="#" class="text-blue-700 hover:underline dark:text-blue-500">Crear cuenta</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div> 
+
+  
         </nav>
 
         <div class="icons">
@@ -36,6 +80,7 @@
             <input type="search" id="search-box" placeholder="search here...">
             <label for="search-box" class="fas fa-search"></label>
         </div>
+  
 
         <div class="cart-items-container">
             <div class="cart-item">
@@ -60,6 +105,8 @@
             </div>
             <a href="#" class="btn"> Comprar ahora</a>
 
+            
+
 
         </div>
     </header>
@@ -80,6 +127,8 @@
          <!-- Fin Logos redes sociales -->
 
 
+         
+
     <!-- Principio Nosotros -->
     <section class="home" id="home">
         <div class="content">
@@ -95,6 +144,10 @@
         </div>
     </section>
     <!-- Fin Nosotros -->
+    
+
+    
+    
 
 
     <!-- Inicio Servicios -->
@@ -132,9 +185,11 @@
     <!-- Fin servicios -->
 
 
+    
     <!-- Sección de Citas -->
     <section id="citas" class="citas">
         <div class="citas-container">
+            
             <h2>Agendar Cita</h2>
             <form id="citaForm">
                 <label for="nombre">Nombre:</label>
@@ -169,11 +224,15 @@
             </form>
             <div id="mensaje"></div>
         </div>
+        
     </section>
+    
     <!-- FIN DE CITAS -->
 
 
     <!-- Inicio Tienda -->
+
+    
     <section class="products" id="products">
         <h1 class="heading">Tienda</h1>
         <div class="box-container">
@@ -384,8 +443,7 @@
         <div class="footer-container">
             <div class="footer-info">
                 <div class="footer-details">
-                    <h3>Kingdom Barber</h3>
-                    <p>Donde el estilo y el buen trato se encuentran.</p>
+                    <h3>Sede Bello</h3>
                 </div>
                 <div class="footer-contact">
                     <h4>Contacto</h4>
@@ -396,14 +454,39 @@
                     </ul>
                 </div>
             </div>
+            <div class="footer-info">
+                <div class="footer-details">
+                    <h3>Sede El Tesoro</h3>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>Dirección: Calle 50 # 50 - 20</li>
+                        <li>Teléfono: +123 456 789</li>
+                        <li>Email: contacto@kbarber.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-info">
+                <div class="footer-details">
+                    <h3>Horario</h3>
+                </div>
+                <div class="footer-contact">
+                    <ul>
+                        <li>Lunes a Sabado: 7am - 9:15pm</li>
+                        <li>​​Domingo: Cerrado</li>
+                    </ul>
+                </div>
+            </div>
         </div>
+        
         <div class="footer-bottom">
             <p>&copy; 2024 Kingdom Barber - Todos los derechos reservados.</p>
         </div>
     </footer>
 <!-- fin de footer -->
 
-
+<script src="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.bundle.js"></script>
     <script src="scrip.js"></script>
 </body>
 

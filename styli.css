@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap'); /* Importa la fuente Nunito desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap'); /* Importa la fuente Nunito desde Google Fonts */
+
+
 
 :root {
     --main-color: #dead7f; /* Define el color principal */
@@ -8,7 +10,11 @@
 }
 
 * {
-    font-family: 'Roboto', sans-serif; /* Aplica la fuente Roboto a todo el contenido */
+    font-family: "Alkatra", system-ui; /* Aplica la fuente Roboto a todo el contenido */
+    font-optical-sizing: auto;
+    font-weight: <700>;
+    font-style: normal;
+
     margin: 0; padding: 0; /* Elimina márgenes y rellenos predeterminados */
     box-sizing: border-box; /* Incluye bordes y rellenos en el tamaño total */
     outline: none; border: none; /* Elimina contornos y bordes por defecto */
@@ -17,7 +23,7 @@
 }
 
 html {
-    font-size: 62.5%; /* Define el tamaño base de fuente para facilitar cálculos rem */
+    font-size: 70%; /* Define el tamaño base de fuente para facilitar cálculos rem */
     overflow-x: hidden; /* Oculta el desplazamiento horizontal */
     scroll-padding-top: 9rem; /* Agrega un margen superior al desplazarse */
     scroll-behavior: smooth; /* Desplazamiento suave */
@@ -517,7 +523,7 @@ body {
 
 .footer-details h3 {
     font-size: 2.5rem;
-    color: #e60000; /* Rojo barbería */
+    color: #c09d03; /* Rojo barbería */
     margin-bottom: 1rem;
 }
 
@@ -528,7 +534,7 @@ body {
 
 .footer-contact h4 {
     font-size: 2rem;
-    color: #e60000; /* Rojo barbería */
+    color: #b98801; /* Rojo barbería */
     margin-bottom: 1rem;
 }
 
