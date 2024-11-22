@@ -12,6 +12,7 @@
 
 </head>
 
+
 <body class="Alkatra">
     <header class="header">
         <a href="#" class="logo max-w-xs transition duration-150 ease-in-out hover:scale-110">
@@ -23,111 +24,208 @@
             <a href="#products">Tienda</a>
             <a href="#contact">Contactos</a>
             <a href="#mapa">Sedes</a>
-            <a href="#registro" class="registro-btn" data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" >
+            <a href="#registro" class="registro-btn" data-modal-target="authentication-modal"
+                data-modal-toggle="authentication-modal">
                 <i class="fas fa-user-plus"></i> Ingreso</a>
-                
-  
-  <!-- Main modal -->
-  <div id="authentication-modal" aria-hidden="true" class="hidden overflow-x-hidden overflow-y-auto fixed h-modal md:h-full top-4 left-0 right-0 md:inset-0 z-50 justify-center items-center">
-    <div class="relative w-full max-w-md px-4 h-full md:h-auto">
-        <!-- Modal content -->
-        <div class="bg-white rounded-lg shadow relative dark:bg-gray-700">
-            <div class="flex justify-end p-2">
-                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-toggle="authentication-modal">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
-                </button>
-            </div>
-            <form class="space-y-6 px-6 lg:px-8 pb-4 sm:pb-6 xl:pb-8" action="#">
-                <h3 class="text-xl font-medium text-gray-900 dark:text-white">Ingresa a la plataforma</h3>
-                <div>
-                    <label for="email" class="text-sm font-medium text-gray-900 block mb-2 dark:text-gray-300">Correo electronico</label>
-                    <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="nombre@kingdombarber.com" required="">
-                </div>
-                <div>
-                    <label for="password" class="text-sm font-medium text-gray-900 block mb-2 dark:text-gray-300">Contraseña</label>
-                    <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required="">
-                </div>
-                <div class="flex justify-between">
-                    <div class="flex items-start">
-                        <div class="flex items-center h-5">
-                            <input id="remember" aria-describedby="remember" type="checkbox" class="bg-gray-50 border border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded dark:bg-gray-600 dark:border-gray-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required="">
+
+            <!-- Inicio boton modal para Ingresar -->
+            <div id="authentication-modal" aria-hidden="true"
+                class="hidden overflow-x-hidden overflow-y-auto fixed h-modal md:h-full top-4 left-0 right-0 md:inset-0 z-50 justify-center items-center">
+                <div class="relative w-full max-w-md px-4 h-full md:h-auto">
+                    <!-- Inicio contenido moral para ingresar -->
+                    <div class="bg-white rounded-lg shadow relative dark:bg-gray-700">
+                        <div class="flex justify-end p-2">
+                            <button type="button"
+                                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
+                                data-modal-toggle="authentication-modal">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
                         </div>
-                        <div class="text-sm ml-3">
-                        <label for="remember" class="font-medium text-gray-900 dark:text-gray-300">Recuerdame</label>
-                        </div>
+                        <form class="space-y-6 px-6 lg:px-8 pb-4 sm:pb-6 xl:pb-8" action="#">
+                            <h3 class="text-xl font-medium text-gray-900 dark:text-white">Ingresa a la plataforma</h3>
+                            <div>
+                                <label for="email"
+                                    class="text-sm font-medium text-gray-900 block mb-2 dark:text-gray-300">Correo
+                                    electronico</label>
+                                <input type="email" name="email" id="email"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                    placeholder="nombre@kingdombarber.com" required="">
+                            </div>
+                            <div>
+                                <label for="password"
+                                    class="text-sm font-medium text-gray-900 block mb-2 dark:text-gray-300">Contraseña</label>
+                                <input type="password" name="password" id="password" placeholder="••••••••"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                    required="">
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex items-start">
+                                    <div class="flex items-center h-5">
+                                        <input id="remember" aria-describedby="remember" type="checkbox"
+                                            class="bg-gray-50 border border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded dark:bg-gray-600 dark:border-gray-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800"
+                                            required="">
+                                    </div>
+                                    <div class="text-sm ml-3">
+                                        <label for="remember"
+                                            class="font-medium text-gray-900 dark:text-gray-300">Recuerdame</label>
+                                    </div>
+                                </div>
+                                <button type="button" class="text-sm text-blue-700 hover:underline dark:text-blue-500"
+                                    data-modal-toggle="forgot-password-modal">¿Olvidaste contraseña?</button>
+                            </div>
+                            <button type="submit"
+                                class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Ingresar</button>
+                            <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
+                                ¿No estas registrado? <button type="button"
+                                    class="text-blue-700 hover:underline dark:text-blue-500"
+                                    data-modal-toggle="create-account-modal">Crear cuenta</button>
+                            </div>
+                        </form>
                     </div>
-                    <a href="#" class="text-sm text-blue-700 hover:underline dark:text-blue-500">¿Olvidaste contraseña?</a>
+                    <!-- Fin contenido moral para ingresar -->
                 </div>
-                <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Ingresar</button>
-                <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
-                    ¿No estas registrado? <a href="#" class="text-blue-700 hover:underline dark:text-blue-500">Crear cuenta</a>
-                </div>
-            </form>
-        </div>
-    </div>
-</div> 
+            </div>
+            <!-- Fin boton modal para Ingresar -->
 
-  
+            <!-- Inicio modal olvide contraseña -->
+            <div id="forgot-password-modal" aria-hidden="true"
+                class="hidden overflow-x-hidden overflow-y-auto fixed h-modal md:h-full top-4 left-0 right-0 md:inset-0 z-50 justify-center items-center">
+                <div class="relative w-full max-w-md px-4 h-full md:h-auto">
+                    <!-- Inicio contenido modal olvide contraseña -->
+                    <div class="bg-white rounded-lg shadow relative dark:bg-gray-700">
+                        <div class="flex justify-end p-2">
+                            <button type="button"
+                                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
+                                data-modal-toggle="forgot-password-modal">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <form class="space-y-6 px-6 lg:px-8 pb-4 sm:pb-6 xl:pb-8" action="#">
+                            <h3 class="text-xl font-medium text-gray-900 dark:text-white">Restablecer contraseña</h3>
+                            <div>
+                                <label for="email-reset"
+                                    class="text-sm font-medium text-gray-900 block mb-2 dark:text-gray-300">Correo
+                                    electronico</label>
+                                <input type="email" name="email-reset" id="email-reset"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                    placeholder="nombre@kingdombarber.com" required="">
+                            </div>
+                            <button type="submit"
+                                class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Enviar
+                                enlace de recuperación</button>
+                        </form>
+                    </div>
+                    <!-- Fin contenido modal olvide contraseña -->
+                </div>
+            </div>
+            <!-- Fin modal olvide contraseña -->
+
+            <!-- Inicio modal crear cuenta -->
+            <div id="create-account-modal" aria-hidden="true"
+                class="hidden overflow-x-hidden overflow-y-auto fixed h-modal md:h-full top-4 left-0 right-0 md:inset-0 z-50 justify-center items-center">
+                <div class="relative w-full max-w-md px-4 h-full md:h-auto">
+                    <!-- Inicio contenido modal crear cuenta -->
+                    <div class="bg-white rounded-lg shadow relative dark:bg-gray-700">
+                        <div class="flex justify-end p-2">
+                            <button type="button"
+                                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
+                                data-modal-toggle="create-account-modal">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <form class="space-y-6 px-6 lg:px-8 pb-4 sm:pb-6 xl:pb-8" action="#">
+                            <h3 class="text-xl font-medium text-gray-900 dark:text-white">Crear una cuenta</h3>
+                            <div>
+                                <label for="email-create"
+                                    class="text-sm font-medium text-gray-900 block mb-2 dark:text-gray-300">Correo
+                                    electronico</label>
+                                <input type="email" name="email-create" id="email-create"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                    placeholder="nombre@kingdombarber.com" required="">
+                            </div>
+                            <div>
+                                <label for="password-create"
+                                    class="text-sm font-medium text-gray-900 block mb-2 dark:text-gray-300">Contraseña</label>
+                                <input type="password" name="password-create" id="password-create"
+                                    placeholder="••••••••"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                    required="">
+                            </div>
+                            <div>
+                                <label for="confirm-password"
+                                    class="text-sm font-medium text-gray-900 block mb-2 dark:text-gray-300">Confirmar
+                                    Contraseña</label>
+                                <input type="password" name="confirm-password" id="confirm-password"
+                                    placeholder="••••••••"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                    required="">
+                            </div>
+                            <button type="submit"
+                                class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Crear
+                                cuenta</button>
+                        </form>
+                    </div>
+                    <!-- Fin contenido modal crear cuenta -->
+                </div>
+            </div>
+            <!-- Fin modal crear cuenta -->
+
+<!-- Inicio busqueda y carrito -->
         </nav>
-
         <div class="icons">
             <div class="fas fa-search" id="search-btn"></div>
             <div class="fas fa-shopping-cart" id="cart-btn"></div>
             <div class="fas fa-bars" id="menu-btn"></div>
         </div>
-
         <div class="search-form">
-            <input type="search" id="search-box" placeholder="search here...">
+            <input type="search" id="search-box" placeholder="Buscar aqui...">
             <label for="search-box" class="fas fa-search"></label>
         </div>
-  
 
         <div class="cart-items-container">
             <div class="cart-item">
-                <!-- #aqui va imagen -->
                 <span class="content"></span>
                 <img src="imagenes/cepillo-barbero-fade-captain-cook-negro_512x512.webp" alt="">
                 <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">$15.99/-</div>
+                    <h3>Cepillo barbero</h3>
+                    <div class="price">$10.000/-</div>
                 </div>
             </div>
-            <div class="cart-item">
-                <!-- #aqui va imagen -->
-                <span class="content"></span>
-                <img src="imagenes/cepillo-barbero-fade-captain-cook-negro_512x512.webp" alt="">
-                <div class="content">
-                    <h3>cart item 02</h3>
-                    <div class="price">$15.99/-</div>
-                </div>
-            </div>
-            <div class="cart-item">
-            </div>
-            <a href="#" class="btn"> Comprar ahora</a>
-
-            
-
-
         </div>
+        <!-- Fin carrito -->
     </header>
 
-         <!-- Inicio Logos redes sociales -->
-        </div>
-        <div class="redessociales">
-            <a href="https://github.com/JuanRivera24/PAGINABARBER">
-                <img src="imagenes/logogit.png" alt="Github" width="50px">
-            </a>
-            <a href="#">
-                <img src="imagenes/logoigg.png" alt="Instagram" width="50px">
-            </a>
-            <a href="#">
-                <img src="imagenes/logowpp.png" alt="Whatsapp" width="50px">
-            </a>
-        </div>
-         <!-- Fin Logos redes sociales -->
 
+    <!-- Inicio Logos redes sociales -->
+    </div>
+    <div class="redessociales">
+        <a href="https://github.com/JuanRivera24/PAGINABARBER">
+            <img src="imagenes/logogit.png" alt="Github" width="50px">
+        </a>
+        <a href="#">
+            <img src="imagenes/logoigg.png" alt="Instagram" width="50px">
+        </a>
+        <a href="#">
+            <img src="imagenes/logowpp.png" alt="Whatsapp" width="50px">
+        </a>
+    </div>
+    <!-- Fin Logos redes sociales -->
 
-         
 
     <!-- Principio Nosotros -->
     <section class="home" id="home">
@@ -140,14 +238,9 @@
                 innovadores y cuidados especializados para la barba, todo en un ambiente relajado y
                 acogedor. Aquí, nuestra misión es que cada cliente se sienta renovado y con confianza.
                 ¡Bienvenidos a la mejor experiencia de barbería en Medellín!</p>
-
         </div>
     </section>
     <!-- Fin Nosotros -->
-    
-
-    
-    
 
 
     <!-- Inicio Servicios -->
@@ -185,11 +278,10 @@
     <!-- Fin servicios -->
 
 
-    
-    <!-- Sección de Citas -->
+    <!-- Inicio sección de citas -->
     <section id="citas" class="citas">
         <div class="citas-container">
-            
+
             <h2>Agendar Cita</h2>
             <form id="citaForm">
                 <label for="nombre">Nombre:</label>
@@ -219,20 +311,15 @@
                     <option value="18:00">6:00 PM</option>
                     <option value="19:00">7:00 PM</option>
                 </select>
-
                 <button type="button" onclick="agendarCita()">Agendar</button>
             </form>
             <div id="mensaje"></div>
         </div>
-        
     </section>
-    
-    <!-- FIN DE CITAS -->
+    <!-- Fin seccion de citas -->
 
 
     <!-- Inicio Tienda -->
-
-    
     <section class="products" id="products">
         <h1 class="heading">Tienda</h1>
         <div class="box-container">
@@ -325,36 +412,7 @@
     <!-- Fin Tienda -->
 
 
-    
-
-
-    <!-- INICIO REGISTRO -->
-
-    <!-- Sección de Registro de Usuario -->
-    <section id="registro" class="registro">
-        <div class="registro-container">
-            <h2>Crear Cuenta</h2>
-            <form id="registroForm">
-                <label for="nombreRegistro">Nombre:</label>
-                <input type="text" id="nombreRegistro" placeholder="Ingrese su nombre" required>
-
-                <label for="email">Correo:</label>
-                <input type="email" id="email" placeholder="Ingrese su correo" required>
-
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" placeholder="Cree una contraseña" required>
-
-                <button type="button" onclick="registrarUsuario()">Registrarse</button>
-            </form>
-            <div id="mensajeRegistro"></div>
-        </div>
-
-    </section>
-
-    <!-- FIN REGISTRO -->
-
-    <!-- INICIO CONTACTOS -->
-
+    <!-- Inicio contactos -->
     <section class="contact" id="contact">
         <h1 class="heading">Contactos<span></span></h1>
         <div class="box-container">
@@ -368,7 +426,6 @@
                         <p><strong>Email:</strong> juan.perez@email.com</p>
                         <p><strong>Teléfono:</strong> +123 456 7890</p>
                         <p><strong>Instagram:</strong> @juanperez_barber</p>
-
                         <!-- Redes Sociales en Vertical -->
                         <div class="social-links">
                             <a href="https://wa.me/1234567890" target="_blank" class="social-icon">
@@ -427,7 +484,7 @@
             </div>
         </div>
     </section>
-    <!-- FIN CONTACTO -->
+    <!-- Fin contactos -->
 
 
     <!-- Inicio Mapa -->
@@ -436,7 +493,7 @@
             width="100%" height="350"></iframe>
     </section>
     <!-- Fin Mapa -->
-     
+
 
     <!-- inicio footer -->
     <footer class="footer">
@@ -479,14 +536,14 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="footer-bottom">
             <p>&copy; 2024 Kingdom Barber - Todos los derechos reservados.</p>
         </div>
     </footer>
-<!-- fin de footer -->
+    <!-- fin de footer -->
 
-<script src="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.bundle.js"></script>
+    <script src="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.bundle.js"></script>
     <script src="scrip.js"></script>
 </body>
 
