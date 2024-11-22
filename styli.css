@@ -1,40 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap'); /* Importa la fuente Nunito desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap'); /* Fuente de letra desde Google Fonts */
 
 
 
 :root {
-    --main-color: #dead7f; /* Define el color principal */
-    --black: #13131a; /* Define el color negro */
-    --bg: #010103; /* Define el color de fondo */
-    --border: 1rem solid rgba(255, 255, 255, 0.3); /* Define el color y grosor del borde */
+    --main-color: #dead7f; /* Color principal */
+    --black: #13131a; /* Color negro */
+    --bg: #010103; /* Color de fondo */
+    --border: 1rem solid rgba(255, 255, 255, 0.3); /* Color y grosor del borde */
 }
 
 * {
-    font-family: "Alkatra", system-ui; /* Aplica la fuente Roboto a todo el contenido */
+    font-family: "Alkatra", system-ui; /* Fuente de letra a todo el contenido */
     font-optical-sizing: auto;
     font-weight: <700>;
     font-style: normal;
-
-    margin: 0; padding: 0; /* Elimina márgenes y rellenos predeterminados */
-    box-sizing: border-box; /* Incluye bordes y rellenos en el tamaño total */
-    outline: none; border: none; /* Elimina contornos y bordes por defecto */
-    text-decoration: none; /* Elimina subrayados en textos */
-    transition: 0s linear; /* Aplica transición suave */
+    margin: 0; padding: 0; 
+    box-sizing: border-box;
+    outline: none; border: none; 
+    text-decoration: none; 
+    transition: 0s linear;
 }
 
 html {
-    font-size: 70%; /* Define el tamaño base de fuente para facilitar cálculos rem */
+    font-size: 70%; /* Tamañp fuente de letra */
     overflow-x: hidden; /* Oculta el desplazamiento horizontal */
-    scroll-padding-top: 9rem; /* Agrega un margen superior al desplazarse */
+    scroll-padding-top: 9rem; /* Margen superior al desplazarse */
     scroll-behavior: smooth; /* Desplazamiento suave */
 }
 
 html::-webkit-scrollbar {
     width: .8rem; /* Ancho del scrollbar */
 }
-html::-webkit-scrollbar-track {
-    background: transparent; /* Fondo transparente del track del scrollbar */
-}
+
 html::-webkit-scrollbar-thumb {
     background: #fff; /* Color blanco para el scrollbar */
     border-radius: 5rem; /* Bordes redondeados */
@@ -58,15 +55,12 @@ body {
 
 .btn {
     margin-top: 1rem; /* Margen superior */
-    display: inline-block; /* Bloque en línea */
+    display: inline-block;
     padding: .9rem 3rem; /* Relleno */
     font-size: 1.7rem; /* Tamaño de fuente */
     color: #FFF; /* Color blanco */
     background: var(--main-color); /* Color de fondo principal */
     cursor: pointer; /* Cambia cursor al pasar sobre el botón */
-}
-.btn:hover {
-    letter-spacing: .2rem; /* Espaciado entre letras en hover */
 }
 
 .header {
@@ -247,7 +241,7 @@ body {
     transform: scale(1.1);
 }
 
-/* Sección sobre nosotros */
+/* Sección Nosotros */
 .about .row {
     align-items: baseline;
     display: flex;
@@ -283,8 +277,7 @@ body {
     line-height: 1.8;
 }
 
-/* Contenedor de la sección de Cortes */
-
+/* Sección de servicios */
 .menu{
     padding: 50px;
 }
@@ -332,7 +325,7 @@ body {
 }
 
 
-/* Contenedor de la sección de productos */
+/* Secion de tienda */
 
 .products{
     padding: 50px;
@@ -358,6 +351,85 @@ body {
     border: var(--border);
     color: #fff;
     margin: .3rem;
+}
+
+/* Inicio contacto */
+.contact .box-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.contact .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-wrap: wrap;
+    width: 80%;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 15rem;
+}
+
+.contact .barber {
+    text-align: center;
+    background-color: #1d0909;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    min-width: 250px;
+}
+
+.contact .barber .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact .barber .content h3 {
+    font-size: 2rem;
+    color: #dead7f;
+    margin-bottom: 1rem;
+}
+
+.contact .barber .content p {
+    font-size: 1.6rem;
+    color: #fdecec;
+    margin: 0.5rem 0;
+}
+
+.contact .barber .content p strong {
+    color: var(--main-color);
+}
+
+.contact .barber .content .social-links {
+    display: flex;
+    flex-direction: column; /* Organiza los iconos verticalmente */
+    gap: 1rem; /* Espaciado entre los iconos */
+    margin-top: 1rem;
+}
+
+.contact .barber .content .social-links a {
+    font-size: 1.6rem;
+    color: #fdecec;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.contact .barber .content .social-links a:hover {
+    color: #dead7f; /* Color al hacer hover */
+}
+
+.contact .barber .content .social-links i {
+    font-size: 2rem; /* Tamaño de los iconos */
 }
 
 /* Sección de Citas */
@@ -420,82 +492,9 @@ body {
     font-size: 1.6rem;
     color: var(--main-color);
 }
-/* FIN CITAS */
-
-/* INICIO REGISTRO */
-
-/* Contenedor principal de la sección de registro de usuario */
-.registro {
-    padding: 3rem 2rem; /* Espaciado interno */
-    background-color: #414141; /* Fondo claro */
-    text-align: center; /* Centra el contenido */
-}
-
-/* Contenedor del formulario de registro */
-.registro-container {
-    max-width: 600px; /* Ancho máximo del formulario */
-    margin: 0 auto; /* Centra el formulario horizontalmente */
-    background-color: #fff; /* Fondo blanco */
-    padding: 2rem; /* Espaciado interno */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
-}
-
-/* Estilo del título de la sección de registro */
-.registro-container h2 {
-    font-size: 2.5rem; /* Tamaño de fuente */
-    color: var(--main-color); /* Color principal */
-    margin-bottom: 1rem; /* Espacio debajo del título */
-}
-
-/* Estilo de las etiquetas del formulario */
-.registro-container label {
-    display: block; /* Cada etiqueta ocupa una línea */
-    font-size: 1.6rem; /* Tamaño de fuente */
-    color: #333; /* Color de texto */
-    margin: 1rem 0 0.5rem; /* Espaciado alrededor de la etiqueta */
-}
-
-/* Estilo de los campos de entrada del formulario */
-.registro-container input {
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    padding: 0.8rem; /* Espaciado interno */
-    font-size: 1.6rem; /* Tamaño de fuente */
-    margin-bottom: 1rem; /* Espacio debajo del campo */
-    border: 1px solid #ccc; /* Borde gris claro */
-    border-radius: 4px; /* Bordes redondeados */
-}
-
-/* Estilo del botón de registro */
-.registro-container button {
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    padding: 1rem; /* Espaciado interno */
-    font-size: 1.8rem; /* Tamaño de fuente */
-    background-color: var(--main-color); /* Color de fondo */
-    color: #fff; /* Color del texto */
-    border: none; /* Sin borde */
-    border-radius: 4px; /* Bordes redondeados */
-    cursor: pointer; /* Muestra una mano al pasar */
-    margin-top: 1rem; /* Espacio encima del botón */
-}
-
-/* Cambia el color del botón al pasar el cursor */
-.registro-container button:hover {
-    background-color: #444; /* Color de fondo en hover */
-}
-
-/* Estilo del mensaje de confirmación o error */
-#mensajeRegistro {
-    margin-top: 1rem; /* Espacio encima del mensaje */
-    font-size: 1.6rem; /* Tamaño de fuente */
-    color: var(--main-color); /* Color principal */
-}
-
-
-
-/* FIN REGISTRO */
 
 /* inicio footer */
+
 /* Estilos generales para el pie de página */
 .footer {
     background-color: #2c2c2c; /* Fondo oscuro */
@@ -580,128 +579,7 @@ body {
     }
 }
 
-/* fin footer */
 
-/* INICIO CONTACTO */
-.contact .box-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    flex-wrap: wrap;
-    padding: 2rem;
-}
-
-.contact .row {
-    display: flex;
-    justify-content: space-between;
-    gap: 3rem;
-    flex-wrap: wrap;
-    width: 80%;
-    align-items: center;
-    margin-top: 2rem;
-    margin-left: 15rem;
-}
-
-.contact .barber {
-    text-align: center;
-    background-color: #1d0909;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    min-width: 250px;
-}
-
-.contact .barber .image img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.contact .barber .content h3 {
-    font-size: 2rem;
-    color: #dead7f;
-    margin-bottom: 1rem;
-}
-
-.contact .barber .content p {
-    font-size: 1.6rem;
-    color: #fdecec;
-    margin: 0.5rem 0;
-}
-
-.contact .barber .content p strong {
-    color: var(--main-color);
-}
-
-.contact .barber .content .social-links {
-    display: flex;
-    flex-direction: column; /* Organiza los iconos verticalmente */
-    gap: 1rem; /* Espaciado entre los iconos */
-    margin-top: 1rem;
-}
-
-.contact .barber .content .social-links a {
-    font-size: 1.6rem;
-    color: #fdecec;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: color 0.3s ease;
-}
-
-.contact .barber .content .social-links a:hover {
-    color: #dead7f; /* Color al hacer hover */
-}
-
-.contact .barber .content .social-links i {
-    font-size: 2rem; /* Tamaño de los iconos */
-}
-
-/* FIN CONTACTO */
-
-/* INICIO CARRUSEL */
-
-/* FIN */
-
-.products .box-container .box .icons a:hover {
-    background: var(--main-color); /* Color en hover */
-}
-
-.products .box-container .box .image {
-    padding: 2.5rem 0;
-}
-
-.products .box-container .box .image img {
-    height: 25rem;
-}
-
-.products .box-container .box .content h3 {
-    color: #fff;
-}
-
-.products .box-container .box .content .stars {
-    padding: 1.5rem;
-}
-
-.products .box-container .box .content .stars i {
-    font-size: 1.7rem;
-    color: var(--main-color);
-}
-
-.products .box-container .box .content .price {
-    color: #fff;
-    font-size: 2.5rem;
-}
-
-.products .box-container .box .content .price span {
-    text-decoration: line-through; /* Precio tachado */
-    font-weight: lighter;
-    font-size: 1.5rem;
-}
 
 /* Media Queries para pantallas medianas */
 @media (max-width: 991px) {
