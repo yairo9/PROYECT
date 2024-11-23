@@ -201,7 +201,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(/imagenes/Fondobarberbia.jpg) no-repeat; /* Imagen de fondo */
+    background: url(https://i.ibb.co/xJjVWvS/Fondobarberbia.jpg) no-repeat; /* Imagen de fondo */
     background-size: cover;
     background-position: center ;
     padding: 100px;
