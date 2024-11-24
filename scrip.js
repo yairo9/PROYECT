@@ -159,3 +159,103 @@ document.addEventListener("DOMContentLoaded", function() {
     chatbox.innerHTML = "";
 });
 
+//citas
+// Selección de día en el calendario
+document.querySelectorAll('.box').forEach((day) => {
+    day.addEventListener('click', function () {
+        // Quita la selección previa
+        document.querySelectorAll('.box').forEach((d) => d.classList.remove('bg-blue-500'));
+        // Resalta el día seleccionado
+        this.classList.add('bg-blue-500');
+        // Muestra el día seleccionado
+        const selectedDay = this.getAttribute('data-day');
+        const mensaje = document.getElementById('mensaje');
+        mensaje.innerHTML = `Día seleccionado: ${selectedDay}`;
+        mensaje.style.color = "green";
+    });
+});
+
+// Función para agendar cita
+// Generar el calendario dinámico
+function generarCalendario(mes, anio) {
+    const calendario = document.getElementById("calendario");
+    calendario.innerHTML = `
+        <div class="text-center text-blue-300">L</div>
+        <div class="text-center text-blue-300">M</div>
+        <div class="text-center text-blue-300">X</div>
+        <div class="text-center text-blue-300">J</div>
+        <div class="text-center text-blue-300">V</div>
+        <div class="text-center text-blue-300">S</div>
+        <div class="text-center text-blue-300">D</div>
+    `;
+
+    const primerDia = new Date(anio, mes, 1).getDay(); // Día del 1ro
+    const diasEnMes = new Date(anio, mes + 1, 0).getDate(); // Total días del mes
+    const offset = primerDia === 0 ? 6 : primerDia - 1; // Ajuste lunes-inicio
+
+    // Espacios vacíos antes del primer día
+    for (let i = 0; i < offset; i++) {
+        calendario.innerHTML += `<div></div>`;
+    }
+
+    // Generar días del mes
+    for (let dia = 1; dia <= diasEnMes; dia++) {
+        calendario.innerHTML += `
+            <div class="relative cursor-pointer hover:scale-105 bg-gray-800 text-white rounded-md p-4 box" data-day="${dia}">
+                <div class="absolute inset-0 bg-gradient"></div>
+                ${dia}
+            </div>
+        `;
+    }
+
+    // Asignar eventos a los días
+    asignarEventosDias();
+}
+
+// Asignar eventos a los días
+function asignarEventosDias() {
+    document.querySelectorAll('.box').forEach((day) => {
+        day.addEventListener('click', function () {
+            document.querySelectorAll('.box').forEach((d) => d.classList.remove('bg-blue-500'));
+            this.classList.add('bg-blue-500');
+            const selectedDay = this.getAttribute('data-day');
+            const mensaje = document.getElementById('mensaje');
+            mensaje.innerHTML = `Día seleccionado: ${selectedDay}`;
+            mensaje.style.color = "green";
+        });
+    });
+}
+
+// Generar horas dinámicas
+function generarHoras() {
+    const selectHora = document.getElementById("hora");
+    selectHora.innerHTML = '<option value="">Selecciona una hora</option>'; // Reset
+    for (let hora = 10; hora <= 19; hora++) {
+        const formato = hora < 12 ? "AM" : "PM";
+        const horaFormateada = hora > 12 ? hora - 12 : hora;
+        selectHora.innerHTML += `<option value="${hora}:00">${horaFormateada}:00 ${formato}</option>`;
+    }
+}
+
+// Función para agendar la cita
+function agendarCita() {
+    const nombre = document.getElementById('nombre').value;
+    const hora = document.getElementById('hora').value;
+    const mensaje = document.getElementById('mensaje');
+
+    if (nombre && hora) {
+        mensaje.innerHTML = `¡Cita agendada para ${nombre} a las ${hora}!`;
+        mensaje.style.color = "green";
+        document.getElementById("citaForm").reset();
+    } else {
+        mensaje.innerHTML = "Por favor, completa todos los campos.";
+        mensaje.style.color = "red";
+    }
+}
+
+// Inicializar calendario y horas al cargar la página
+const fechaActual = new Date();
+generarCalendario(fechaActual.getMonth(), fechaActual.getFullYear());
+generarHoras();
+
+//fin

@@ -303,43 +303,38 @@
 
 
     <!-- Inicio sección de citas -->
-    <section id="citas" class="citas">
-        <div class="citas-container">
-
-            <h2>Agendar Cita</h2>
-            <form id="citaForm">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
-                <label for="fecha">Día:</label>
-                <select id="fecha">
-                    <option value="Lunes">Lunes</option>
-                    <option value="Martes">Martes</option>
-                    <option value="Miércoles">Miércoles</option>
-                    <option value="Jueves">Jueves</option>
-                    <option value="Viernes">Viernes</option>
-                    <option value="Sábado">Sábado</option>
-                    <option value="Domingo">Domingo</option>
-                </select>
-
-                <label for="hora">Hora:</label>
-                <select id="hora">
-                    <!-- Horarios de 10am a 7pm -->
-                    <option value="10:00">10:00 AM</option>
-                    <option value="11:00">11:00 AM</option>
-                    <option value="12:00">12:00 PM</option>
-                    <option value="13:00">1:00 PM</option>
-                    <option value="14:00">2:00 PM</option>
-                    <option value="15:00">3:00 PM</option>
-                    <option value="16:00">4:00 PM</option>
-                    <option value="17:00">5:00 PM</option>
-                    <option value="18:00">6:00 PM</option>
-                    <option value="19:00">7:00 PM</option>
-                </select>
-                <button type="button" onclick="agendarCita()">Agendar</button>
-            </form>
-            <div id="mensaje"></div>
+    <section id="citas" class="citas p-6">
+        <div class="flex flex-wrap items-start justify-between max-w-7xl mx-auto bg-gray-900 rounded-lg shadow-lg">
+            <!-- Calendario -->
+            <div class="w-full md:w-1/2 p-4">
+                <div class="text-center text-white mb-4">
+                    <h2 class="text-2xl font-bold">Selecciona una fecha</h2>
+                </div>
+                <div class="grid grid-cols-7 gap-2" id="calendario">
+                    <!-- Los días del mes se generarán dinámicamente con JavaScript -->
+                </div>
+            </div>
+    
+            <!-- Formulario -->
+            <div class="w-full md:w-1/2 bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-lg font-bold text-gray-800 mb-4">Completa tus datos</h2>
+                <form id="citaForm">
+                    <label for="nombre" class="block mb-2 text-sm text-gray-600">Nombre:</label>
+                    <input type="text" id="nombre" class="w-full p-2 border rounded-lg mb-4" placeholder="Tu nombre" required>
+    
+                    <label for="hora" class="block mb-2 text-sm text-gray-600">Hora:</label>
+                    <select id="hora" class="w-full p-2 border rounded-lg mb-4 bg-gray-50 text-gray-800">
+                        <!-- Las horas disponibles se generarán dinámicamente con JavaScript -->
+                    </select>
+    
+                    <button type="button" onclick="agendarCita()" class="w-full py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700">
+                        Agendar Cita
+                    </button>
+                </form>
+                <div id="mensaje" class="mt-4 text-center"></div>
+            </div>
         </div>
-    </section>
+    </section>             
     <!-- Fin seccion de citas -->
 
 
