@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kingdom Barber</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="servicios.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -17,7 +17,7 @@
 <body class="Alkatra">
     <header class="header">
         <a href="#" class="logo max-w-xs transition duration-150 ease-in-out hover:scale-110">
-            <img src="scr/imagenes/Logo barber.png" alt="Logo barberia"></a>
+            <img src="imagenes/Logo barber.png" alt="Logo barberia"></a>
         <nav class="navbar">
             <a href="#home">Nosotros</a>
             <a href="#menu">Servicios</a>
@@ -201,7 +201,7 @@
         <div class="cart-items-container">
             <div class="cart-item">
                 <span class="content"></span>
-                <img src="scr/imagenes/cepillo-barbero-fade-captain-cook-negro_512x512.webp" alt="">
+                <img src="imagenes/cepillo-barbero-fade-captain-cook-negro_512x512.webp" alt="">
                 <div class="content">
                     <h3>Cepillo barbero</h3>
                     <div class="price">$10.000/-</div>
@@ -213,14 +213,13 @@
         <!-- Inicio Logos redes sociales -->
         <div class="redessociales">
             <a href="https://github.com/JuanRivera24/PAGINABARBER">
-                <img src="scr/imagenes/logogit.png" alt="Github" width="50px">
+                <img src="imagenes/logogit.png" alt="Github" width="50px">
             </a>
             <a href="https://www.instagram.com/kingdom_barber77/">
-                <img src="scr/imagenes/logoigg.png" alt="Instagram" width="50px">
+                <img src="imagenes\logoigg.png" alt="Instagram" width="50px">
             </a>
             <a href="javascript:void(0);" id="open-chat-logo">
-                <img src="scr/imagenes/logowpp.png" alt="Whatsapp" width="50px">
-            </a>
+                <img src="imagenes/logowpp.png" alt="Whatsapp" width="50px">
         </div>
         <!-- Fin Logos redes sociales -->
 
@@ -232,7 +231,7 @@
         <div id="chat-container" class="hidden fixed bottom-16 right-4 w-96">
             <div class="bg-white shadow-md rounded-lg max-w-lg w-full">
                 <div class="p-4 border-b bg-green-500 text-white rounded-t-lg flex justify-between items-center">
-                    <p class="text-lg font-semibold">Bot de Barbería</p>
+                    <p class="text-lg font-semibold">WhatsApp Kingdom Barber</p>
                     <button id="close-chat"
                         class="text-gray-300 hover:text-gray-400 focus:outline-none focus:text-gray-400">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
@@ -275,227 +274,7 @@
     <!-- Fin Nosotros -->
 
 
-    <!-- Inicio Servicios -->
 
-
-
-    <section class="menu" id="menu">
-
-        
-        <h1 class="heading">Servicios</h1>
-
-        <p>En nuestra barbería ofrecemos una amplia variedad de servicios de corte de cabello, diseñados para adaptarse a tu estilo y personalidad.</p>
-
-        <div>
-            <img src="https://i.pinimg.com/control2/736x/d6/c7/7f/d6c77f64ee023a94422f132f269b7d32.jpg" alt="Corte1">
-            <img src="https://i.pinimg.com/736x/3b/62/7c/3b627c579eb14ff8108a656ad0b7498a.jpg" alt="Corte2">
-            <img src="https://i.pinimg.com/control2/736x/fe/c1/21/fec121b70ea9b6e7a6b33459a91da151.jpg"
-                alt="Corte diseño">
-            <img src="https://i.pinimg.com/control2/736x/ac/1a/fc/ac1afcd603ed2fa236941cf3cb99fcdd.jpg"
-                alt="Corte niños">
-            <img src="https://i.pinimg.com/736x/79/b1/82/79b1826eda1675b49e65f3e69f8e9e5c.jpg" alt="Corte cejas">
-        </div>
-
-        <a href="servicios.html"><button type='button' class='items-center py-2.5 px-6 text-lg rounded-lg bg-indigo-700 text-white cursor-pointer font-semibold  shadow-xs transition-all duration-400 hover:bg-indigo-600 hover:scale-110'>Ver mas servicios</button></a>
-
-    </section>
-    <!-- Fin servicios -->
-
-
-    <!-- Inicio sección de citas -->
-    <section id="citas" class="citas">
-        <div class="citas-container">
-
-            <h2>Agendar Cita</h2>
-            <form id="citaForm">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
-                <label for="fecha">Día:</label>
-                <select id="fecha">
-                    <option value="Lunes">Lunes</option>
-                    <option value="Martes">Martes</option>
-                    <option value="Miércoles">Miércoles</option>
-                    <option value="Jueves">Jueves</option>
-                    <option value="Viernes">Viernes</option>
-                    <option value="Sábado">Sábado</option>
-                    <option value="Domingo">Domingo</option>
-                </select>
-
-                <label for="hora">Hora:</label>
-                <select id="hora">
-                    <!-- Horarios de 10am a 7pm -->
-                    <option value="10:00">10:00 AM</option>
-                    <option value="11:00">11:00 AM</option>
-                    <option value="12:00">12:00 PM</option>
-                    <option value="13:00">1:00 PM</option>
-                    <option value="14:00">2:00 PM</option>
-                    <option value="15:00">3:00 PM</option>
-                    <option value="16:00">4:00 PM</option>
-                    <option value="17:00">5:00 PM</option>
-                    <option value="18:00">6:00 PM</option>
-                    <option value="19:00">7:00 PM</option>
-                </select>
-                <button type="button" onclick="agendarCita()">Agendar</button>
-            </form>
-            <div id="mensaje"></div>
-        </div>
-    </section>
-    <!-- Fin seccion de citas -->
-
-
-    <!-- Inicio Tienda -->
-    <section class="products" id="products">
-        <h1 class="heading">Tienda</h1>
-        <div class="box-container">
-            <div class="box">
-                <div class="icons">
-                    <a href="#" class="fas fa-shopping-cart"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="scr/imagenes/producto5.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>fresh coffe</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="price">$14.000 <span> #25.000 </span></div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="icons">
-                    <a href="#" class="fas fa-shopping-cart"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="scr/imagenes/producto5.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>fresh coffe</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="price">$14.000 <span> #25.000 </span></div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="icons">
-                    <a href="#" class="fas fa-shopping-cart"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="scr/imagenes/producto5.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>fresh coffe</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="price">$14.000 <span> #25.000 </span></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Fin Tienda -->
-
-
-    <!-- Inicio contactos -->
-    <section class="contact" id="contact">
-        <h1 class="heading">Contactos<span></span></h1>
-        <div class="box-container">
-            <div class="row">
-                <div class="barber">
-                    <div class="image">
-                        <img src="scr/imagenes/barber1.jpg" alt="Barbero 1">
-                    </div>
-                    <div class="content">
-                        <h3>Juan Pérez</h3>
-                        <p><strong>Email:</strong> juan.perez@email.com</p>
-                        <p><strong>Teléfono:</strong> +123 456 7890</p>
-                        <p><strong>Instagram:</strong> @juanperez_barber</p>
-                        <!-- Redes Sociales en Vertical -->
-                        <div class="social-links">
-                            <a href="https://wa.me/1234567890" target="_blank" class="social-icon">
-                                <i class="fab fa-whatsapp"></i> WhatsApp
-                            </a>
-                            <a href="https://www.instagram.com/juanperez_barber" target="_blank" class="social-icon">
-                                <i class="fab fa-instagram"></i> Instagram
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="barber">
-                    <div class="image">
-                        <img src="scr/imagenes/barber2.jpeg" alt="Barbero 2">
-                    </div>
-                    <div class="content">
-                        <h3>Cndidan Argaez</h3>
-                        <p><strong>Email:</strong> ana.garcia@email.com</p>
-                        <p><strong>Teléfono:</strong> +123 456 7891</p>
-                        <p><strong>Instagram:</strong> @anagarcia_barber</p>
-
-                        <!-- Redes Sociales en Vertical -->
-                        <div class="social-links">
-                            <a href="https://wa.me/1234567891" target="_blank" class="social-icon">
-                                <i class="fab fa-whatsapp"></i> WhatsApp
-                            </a>
-                            <a href="https://www.instagram.com/anagarcia_barber" target="_blank" class="social-icon">
-                                <i class="fab fa-instagram"></i> Instagram
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="barber">
-                    <div class="image">
-                        <img src="scr/imagenes/barber3.jpg" alt="Barbero 3">
-                    </div>
-                    <div class="content">
-                        <h3>Carlos López</h3>
-                        <p><strong>Email:</strong> carlos.lopez@email.com</p>
-                        <p><strong>Teléfono:</strong> +123 456 7892</p>
-                        <p><strong>Instagram:</strong> @carloslopez_barber</p>
-
-                        <!-- Redes Sociales en Vertical -->
-                        <div class="social-links">
-                            <a href="https://wa.me/1234567892" target="_blank" class="social-icon">
-                                <i class="fab fa-whatsapp"></i> WhatsApp
-                            </a>
-                            <a href="https://www.instagram.com/carloslopez_barber" target="_blank" class="social-icon">
-                                <i class="fab fa-instagram"></i> Instagram
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Fin contactos -->
-
-
-    <!-- Inicio Mapa -->
-    <section class="content mapa" id="mapa">
-        <iframe src="https://www.google.com/maps/d/embed?mid=1UghUE7HuOiYwNQYHlobXSNH_d7Oc10Q&ehbc=2E312F&noprof=1"
-            width="100%" height="350"></iframe>
-    </section>
-    <!-- Fin Mapa -->
 
 
     <!-- inicio footer -->
