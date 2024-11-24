@@ -158,3 +158,4 @@ document.addEventListener("DOMContentLoaded", function() {
     // Aseguramos que el chat comienza vacío y sin mensajes predeterminados
     chatbox.innerHTML = "";
 });
+
