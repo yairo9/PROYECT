@@ -84,3 +84,77 @@ window.onscroll = () =>{
 }
  
 //FIN REGISTRO
+
+// Elementos del chat
+const chatbox = document.getElementById("chatbox");
+const chatContainer = document.getElementById("chat-container");
+const userInput = document.getElementById("user-input");
+const sendButton = document.getElementById("send-button");
+const openChatButton = document.getElementById("open-chat-logo");  // Cambiado a abrir con el logo de WhatsApp
+const closeChatButton = document.getElementById("close-chat");
+
+let isChatboxOpen = false;  // Se inicia con el chat cerrado
+
+// Función para alternar la visibilidad del chat
+function toggleChatbox() {
+    chatContainer.classList.toggle("hidden");
+    isChatboxOpen = !isChatboxOpen; // Cambiar estado del chat
+}
+
+// Abrir el chat al hacer clic en el logo de WhatsApp
+openChatButton.addEventListener("click", toggleChatbox);
+
+// Cerrar el chat
+closeChatButton.addEventListener("click", toggleChatbox);
+
+// Enviar el mensaje del usuario
+sendButton.addEventListener("click", function () {
+    const userMessage = userInput.value;
+    if (userMessage.trim() !== "") {
+        addUserMessage(userMessage);
+        respondToUser(userMessage);
+        userInput.value = "";
+    }
+});
+
+// Detectar la tecla "Enter" para enviar el mensaje
+userInput.addEventListener("keyup", function (event) {
+    if (event.key === "Enter") {
+        const userMessage = userInput.value;
+        addUserMessage(userMessage);
+        respondToUser(userMessage);
+        userInput.value = "";
+    }
+});
+
+// Añadir el mensaje del usuario
+function addUserMessage(message) {
+    const messageElement = document.createElement("div");
+    messageElement.classList.add("mb-2", "text-right");
+    messageElement.innerHTML = `<p class="bg-green-500 text-white rounded-lg py-2 px-4 inline-block">${message}</p>`;
+    chatbox.appendChild(messageElement);
+    chatbox.scrollTop = chatbox.scrollHeight;
+}
+
+// Añadir el mensaje del bot
+function addBotMessage(message) {
+    const messageElement = document.createElement("div");
+    messageElement.classList.add("mb-2");
+    messageElement.innerHTML = `<p class="bg-gray-200 text-gray-700 rounded-lg py-2 px-4 inline-block">${message}</p>`;
+    chatbox.appendChild(messageElement);
+    chatbox.scrollTop = chatbox.scrollHeight;
+}
+
+// Responder al usuario
+function respondToUser(userMessage) {
+    // Lógica del chatbot (puedes personalizar la respuesta aquí)
+    setTimeout(() => {
+        addBotMessage("Gracias por tu mensaje. ¿Te gustaría saber más sobre nuestros servicios de corte o productos?");
+    }, 500);
+}
+
+// Al cargar la página, aseguramos que el chat esté vacío
+document.addEventListener("DOMContentLoaded", function() {
+    // Aseguramos que el chat comienza vacío y sin mensajes predeterminados
+    chatbox.innerHTML = "";
+});
