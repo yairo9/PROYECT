@@ -259,3 +259,64 @@ generarCalendario(fechaActual.getMonth(), fechaActual.getFullYear());
 generarHoras();
 
 //fin
+
+//barra busqueda
+// Variables necesarias
+const searchInput = document.getElementById('search-box'); // Barra de búsqueda
+const searchResults = document.createElement('ul'); // Lista de resultados sugeridos
+searchResults.classList.add('search-suggestions');
+document.querySelector('.search-form').appendChild(searchResults);
+
+// Diccionario con las secciones y palabras clave
+const sections = {
+    "nosotros": "#home",
+    "servicios": "#menu",
+    "citas": "#citas",
+    "tienda": "#products",
+    "contactos": "#contact",
+    "sedes": "#mapa"
+};
+
+// Función para filtrar y mostrar sugerencias
+searchInput.addEventListener('input', function () {
+    const query = searchInput.value.toLowerCase().trim();
+    searchResults.innerHTML = ''; // Limpia sugerencias previas
+
+    if (query) {
+        for (const [key, value] of Object.entries(sections)) {
+            if (key.includes(query)) {
+                const li = document.createElement('li');
+                li.textContent = key;
+                li.dataset.target = value;
+                li.classList.add('search-item');
+                searchResults.appendChild(li);
+            }
+        }
+    }
+});
+
+// Evento para seleccionar una sugerencia
+searchResults.addEventListener('click', function (event) {
+    const target = event.target.dataset.target;
+    if (target) {
+        window.location.href = target; // Redirige a la sección seleccionada
+        searchResults.innerHTML = ''; // Limpia las sugerencias
+        searchInput.value = ''; // Limpia la barra de búsqueda
+    }
+});
+
+// Navegar al presionar Enter con el texto completo
+searchInput.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        const query = searchInput.value.toLowerCase().trim();
+        for (const [key, value] of Object.entries(sections)) {
+            if (key === query) {
+                window.location.href = value; // Redirige a la sección
+                searchResults.innerHTML = ''; // Limpia las sugerencias
+                searchInput.value = ''; // Limpia la barra de búsqueda
+                break;
+            }
+        }
+    }
+});
+
