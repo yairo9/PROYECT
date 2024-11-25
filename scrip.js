@@ -19,13 +19,53 @@ document.querySelector('#search-btn').onclick = () => {
     if (cartItem) cartItem.classList.remove('active');
 };
 
-// Evento de clic en el botón de carrito
-document.querySelector('#cart-btn').onclick = () => {
-    cartItem.classList.toggle('active');
-    // Eliminamos las clases "active" de los otros elementos
-    if (navbar) navbar.classList.remove('active');
-    if (searchForm) searchForm.classList.remove('active');
+
+// Variables necesarias para el carrito
+const cartItemsContainer = document.querySelector('.cart-items-container'); // Contenedor del carrito
+const cartBtn = document.querySelector('#cart-btn'); // Botón del carrito
+const cartItemTemplate = document.querySelector('.cart-item'); // Plantilla del carrito (puedes tener un cart-item vacío para copiar)
+
+// Evento de clic en el botón "Agregar al carrito"
+const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+addToCartButtons.forEach(button => {
+    button.addEventListener('click', function () {
+        const itemName = this.getAttribute('data-name'); // Nombre del servicio/producto
+        const itemPrice = this.getAttribute('data-price'); // Precio del servicio/producto
+
+        // Crear un nuevo item de carrito
+        const newCartItem = cartItemTemplate.cloneNode(true); // Clonamos el elemento cart-item
+        newCartItem.classList.remove('hidden'); // Aseguramos que no esté oculto (por si es una plantilla)
+        
+        // Actualizar el contenido del nuevo item de carrito
+        const content = newCartItem.querySelector('.content');
+        content.querySelector('h3').textContent = itemName;
+        content.querySelector('.price').textContent = `$${itemPrice}/-`;
+
+        // Agregar el nuevo item al carrito
+        cartItemsContainer.appendChild(newCartItem);
+
+        // Mostrar el carrito si no está vacío
+        cartItemsContainer.classList.add('active');
+    });
+});
+
+// Evento de clic en el botón del carrito
+cartBtn.onclick = () => {
+    cartItemsContainer.classList.toggle('active');
+    if (navbar) navbar.classList.remove('active'); // Opcional: Ocultar navbar si está visible
 };
+
+// Función para mostrar el carrito si tiene items
+function updateCartVisibility() {
+    // Si hay ítems en el carrito, mostrarlo
+    if (cartItemsContainer.children.length > 0) {
+        cartItemsContainer.classList.add('active');
+    } else {
+        // Si no hay ítems, ocultarlo
+        cartItemsContainer.classList.remove('active');
+    }
+}
+//fin
 
 // Evento de scroll en la ventana
 window.onscroll = () => {
@@ -261,6 +301,7 @@ generarHoras();
 //fin
 
 //barra busqueda
+// Barra de búsqueda
 // Variables necesarias
 const searchInput = document.getElementById('search-box'); // Barra de búsqueda
 const searchResults = document.createElement('ul'); // Lista de resultados sugeridos
@@ -269,12 +310,56 @@ document.querySelector('.search-form').appendChild(searchResults);
 
 // Diccionario con las secciones y palabras clave
 const sections = {
-    "nosotros": "#home",
-    "servicios": "#menu",
-    "citas": "#citas",
-    "tienda": "#products",
-    "contactos": "#contact",
-    "sedes": "#mapa"
+    "nosotros": "index.html#home",
+    "servicios": "servicios.html",
+    "citas": "index.html#citas",
+    "tienda": "index.html#products",
+    "contactos": "index.html#contact",
+    "sedes": "index.html#mapa",
+    "mapa": "index.html#mapa",
+    "diseño y estilo": "servicios.html#diseno-estilo",
+    "cuidado facial": "servicios.html#cuidado-facial",
+    "corte de cabello": "servicios.html#corte",
+    "corte cabello": "servicios.html#corte",
+    "cabello": "servicios.html#corte",
+    "barbería": "servicios.html#barba",
+    "corte": "servicios.html#corte",
+    "barba": "servicios.html#barba",
+    "barberia": "servicios.html#barba",
+    "afeitado": "servicios.html#barba", // Palabra clave adicional para barba
+    "cejas": "servicios.html#cejas",
+    "ceja": "servicios.html#cejas",
+    "tinta": "servicios.html#tinte",
+    "tintas": "servicios.html#tinte",
+    "tinte": "servicios.html#tinte",
+    "limpieza facial": "servicios.html#limpieza-facial",
+    "exfoliación": "servicios.html#exfoliacion-facial",
+    "mascarilla": "servicios.html#mascarilla-facial",
+    "hidratación": "servicios.html#hidratacion-facial",
+    "limpieza": "servicios.html#limpieza-facial",
+    "exfoliacion": "servicios.html#exfoliacion-facial",
+    "mascarillas": "servicios.html#mascarilla-facial",
+    "hidratacion": "servicios.html#hidratacion-facial",
+    "servicios": "servicios.html",
+    "servicio": "servicios.html",
+    "servicios de corte": "servicios.html#corte",
+    "servicios de barbería": "servicios.html#barba",
+    "servicios de cejas": "servicios.html#cejas",
+    "inicio sesion": "index.html#registro",
+    "registro": "index.html#registro",
+    "login": "index.html#registro",
+    "registro de usuario": "index.html#registro",
+    "registro usuario": "index.html#registro",
+    "crear cuenta": "index.html#registro",
+    "crear usuario": "index.html#registro",
+    "usuario": "index.html#registro",
+    "usuarios": "index.html#registro",
+    "contraseña": "index.html#registro",
+    "contraseñas": "index.html#registro",
+    "password": "index.html#registro",
+    "exfoliación facial": "servicios.html#exfoliacion-facial",
+    "mascarilla facial": "servicios.html#mascarilla-facial",
+    "hidratación facial": "servicios.html#hidratacion-facial"
 };
 
 // Función para filtrar y mostrar sugerencias
@@ -320,3 +405,4 @@ searchInput.addEventListener('keydown', function (event) {
     }
 });
 
+//fin
