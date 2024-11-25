@@ -15,50 +15,50 @@ document.addEventListener('DOMContentLoaded', function() {
     const serviceDetails = {
         CORTE: {
             title: 'Corte',
-            description: 'Corte de cabello para un look moderno.',
-            price: '$15',
+            description: 'Un corte de cabello profesional diseñado para realzar tu estilo y personalidad. Nuestros expertos estilistas te asesorarán para encontrar el look que mejor se adapte a ti, ya sea clásico, moderno o vanguardista.',
+            price: '$25.000',
             image: 'https://imagizer.imageshack.com/img924/360/h45gXn.jpg'
         },
         BARBA: {
             title: 'Barba',
-            description: 'Afeitado y arreglo de barba.',
-            price: '$10',
+            description: 'Corte y diseño de barba para un look impecable. Nuestro servicio incluye recorte, perfilado y tratamiento para mantener tu barba con un aspecto limpio y cuidado, adaptado a la forma de tu rostro.',
+            price: '$10.000',
             image: 'https://imagizer.imageshack.com/img923/9378/V3Igbf.jpg'
         },
         CEJAS: {
             title: 'Cejas',
-            description: 'Diseño y depilación de cejas.',
-            price: '$8',
+            description: 'Dale forma a tus cejas con nuestro servicio de diseño personalizado. Utilizamos técnicas precisas para resaltar la expresión de tu rostro, garantizando un acabado limpio y natural.',
+            price: '$5.000',
             image: 'https://imagizer.imageshack.com/img924/2705/hwhZkO.jpg'
         },
         TINTE: {
             title: 'Tinte',
-            description: 'Tinte de cabello para un color vibrante.',
-            price: '$20',
+            description: 'Renueva tu estilo con un cambio de color. Ofrecemos una amplia gama de tonos y técnicas de tinte para conseguir el look perfecto, desde colores clásicos hasta opciones atrevidas y modernas.',
+            price: '$20.000',
             image: 'https://imagizer.imageshack.com/img923/1430/9i1C66.jpg'
         },
         LIMPIEZA: {
             title: 'Limpieza Facial',
-            description: 'Limpieza profunda para tu piel.',
-            price: '$25',
+            description: 'Limpieza profunda para eliminar impurezas, exceso de grasa y células muertas. Deja tu piel limpia, fresca y revitalizada con nuestro tratamiento profesional',
+            price: '$15.000',
             image: 'https://imagizer.imageshack.com/img923/9950/vU4aAg.jpg'
         },
         EXFOLIACIÓN: {
             title: 'Exfoliación Facial',
-            description: 'Eliminación de células muertas para una piel suave.',
-            price: '$30',
+            description: 'Exfoliación que elimina suavemente las células muertas, ayudando a regenerar la piel. Logra un cutis suave y radiante con nuestro tratamiento especializado.',
+            price: '$8.000',
             image: 'https://imagizer.imageshack.com/img923/2244/EgeVnJ.jpg'
         },
         MASCARILLA: {
             title: 'Mascarilla Facial',
-            description: 'Hidrata y rejuvenece tu piel.',
-            price: '$18',
+            description: 'Hidrata y nutre tu piel con nuestras mascarillas faciales adaptadas a tus necesidades. Desde rejuvenecimiento hasta control de grasa, tenemos el tratamiento perfecto para ti',
+            price: '$10.000',
             image: 'https://imagizer.imageshack.com/img923/702/jVQv95.jpg'
         },
         HIDRATACIÓN: {
             title: 'Hidratación Facial',
-            description: 'Tratamiento intensivo de hidratación para tu piel.',
-            price: '$22',
+            description: 'Tratamiento intensivo que restaura la hidratación natural de la piel, dejándola suave y saludable. Ideal para pieles deshidratadas o que necesitan un cuidado especial.',
+            price: '$12.000',
             image: 'https://imagizer.imageshack.com/img923/4079/GLmdNu.jpg'
         }
     };
