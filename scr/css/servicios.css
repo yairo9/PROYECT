@@ -201,24 +201,20 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(imagenes/Fondobarberbia.jpg) no-repeat; /* Imagen de fondo */
+    justify-content: center;
     background-size: cover;
     background-position: center ;
     padding: 100px;
 }
 
-.home .content {
-    max-width: 60rem;
-}
-
-.home .content h3 {
-    font-size: 5rem;
+.home h2 {
+    font-size: 40px;
     text-transform: uppercase;
-    color: #dbc013 ;
+    color: #ffffff ;
 }
 
-.home .content p {
-    font-size: 1.6rem;
+.home p {
+    font-size: 20px;
     font-weight: lighter;
     line-height: 1.8;
     padding: 1rem 0;
@@ -241,102 +237,15 @@ body {
     transform: scale(1.1);
 }
 
-/* Sección Nosotros */
-.about .row {
-    align-items: baseline;
-    display: flex;
-    background: var(--black);
-    flex-wrap: wrap; /* Permite que los elementos se ajusten */
-
-}
-
-.about .row .image {
-    flex: 1 1 45rem; /* Ocupa espacio adaptable */
-}
-
-.about .row .image img {
-    width: 25%;
-    align-items: baseline;
-    position: absolute;
-}
-
-.about .row .content {
-    flex: 1 2 45rem;
-    padding: 2rem;
-}
-
-.about .row .content h3 {
-    font-size: 3rem;
-    color: #fff;
-}
-
-.about .row .content p {
-    font-size: 1.6rem;
-    color: #ccc;
-    padding: 1rem 0;
-    line-height: 1.8;
-}
-
 
 
 /* inicio footer */
 
 /* Estilos generales para el pie de página */
 .footer {
-    background-color: #2c2c2c; /* Fondo oscuro */
+    background-color: #000000; /* Fondo oscuro */
     color: #fff; /* Texto blanco */
     padding: 3rem 1rem;
-}
-
-/* Contenedor para los bloques del pie de página */
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
-}
-
-
-/* Estilo para la información de la barbería y contacto */
-.footer-info {
-    flex: 2;
-    min-width: 300px;
-    margin: 1rem;
-    text-align: center;
-}
-
-.footer-details h3 {
-    font-size: 2.5rem;
-    color: #c09d03; /* Rojo barbería */
-    margin-bottom: 1rem;
-}
-
-.footer-details p {
-    font-size: 1.6rem;
-    color: #ccc;
-}
-
-.footer-contact h4 {
-    font-size: 2rem;
-    color: #b98801; /* Rojo barbería */
-    margin-bottom: 1rem;
-}
-
-.footer-contact ul {
-    list-style: none;
-    padding: 0;
-}
-
-.mapa {
-    display: flex;
-}
-
- 
-.footer-contact li {
-    font-size: 1.6rem;
-    color: #ccc;
-    margin-bottom: 0.5rem;
 }
 
 

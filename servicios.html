@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kingdom Barber</title>
-    <link rel="stylesheet" href="servicios.css">
+    <link rel="stylesheet" href="scr/css/servicios.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -17,7 +17,7 @@
 <body class="Alkatra">
     <header class="header">
         <a href="#" class="logo max-w-xs transition duration-150 ease-in-out hover:scale-110">
-            <img src="imagenes/Logo barber.png" alt="Logo barberia"></a>
+            <img src="scr/imagenes/Logo barber.png" alt="Logo barberia"></a>
         <nav class="navbar">
             <a href="#home">Nosotros</a>
             <a href="#menu">Servicios</a>
@@ -201,7 +201,7 @@
         <div class="cart-items-container">
             <div class="cart-item">
                 <span class="content"></span>
-                <img src="imagenes/cepillo-barbero-fade-captain-cook-negro_512x512.webp" alt="">
+                <img src="scr/imagenes/cepillo-barbero-fade-captain-cook-negro_512x512.webp" alt="">
                 <div class="content">
                     <h3>Cepillo barbero</h3>
                     <div class="price">$10.000/-</div>
@@ -213,13 +213,14 @@
         <!-- Inicio Logos redes sociales -->
         <div class="redessociales">
             <a href="https://github.com/JuanRivera24/PAGINABARBER">
-                <img src="imagenes/logogit.png" alt="Github" width="50px">
+                <img src="scr/imagenes/logogit.png" alt="Github" width="50px">
             </a>
             <a href="https://www.instagram.com/kingdom_barber77/">
-                <img src="imagenes\logoigg.png" alt="Instagram" width="50px">
+                <img src="scr/imagenes/logoigg.png" alt="Instagram" width="50px">
             </a>
             <a href="javascript:void(0);" id="open-chat-logo">
-                <img src="imagenes/logowpp.png" alt="Whatsapp" width="50px">
+                <img src="scr/imagenes/logowpp.png" alt="Whatsapp" width="50px">
+            </a>
         </div>
         <!-- Fin Logos redes sociales -->
 
@@ -231,7 +232,7 @@
         <div id="chat-container" class="hidden fixed bottom-16 right-4 w-96">
             <div class="bg-white shadow-md rounded-lg max-w-lg w-full">
                 <div class="p-4 border-b bg-green-500 text-white rounded-t-lg flex justify-between items-center">
-                    <p class="text-lg font-semibold">WhatsApp Kingdom Barber</p>
+                    <p class="text-lg font-semibold">Bot de Barbería</p>
                     <button id="close-chat"
                         class="text-gray-300 hover:text-gray-400 focus:outline-none focus:text-gray-400">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
@@ -264,66 +265,181 @@
 
 
 
-    <!-- Principio Nosotros -->
+    <!-- Servicios -->
     <section class="home" id="home">
-        <div class="content">
-            <h3></h3>
-            <p></p>
+        <div class="bg-black dark:bg-gray-800 h-screen h-full py-6 sm:py-8 lg:py-12">
+            <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+                <div class="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
+                    <div class="flex items-center gap-12 flex-col">
+                        <h2 class="text-5xl font-bold text-white lg:text-5xl dark:text-white">Servicios</h2>
+        
+                        <p class="hidden max-w-screen-xl text-white dark:text-gray-300 md:block">
+                            Aqui puedes encontrar los diferentes servicios que tenemos disponibles con sus respectivos costos.
+                            <br>
+                            Si cuentas con alguna inquietud no dudes en escribirnos y estaremos atentos para que puedas reservar con nosotros.
+                        </p>
+                    </div>
+        
+
+                    <a href="index.html#citas"><button type='button' class='items-center py-5 px-8 text-lg rounded-lg bg-indigo-700 text-white cursor-pointer font-semibold  shadow-xs transition-all duration-400 hover:bg-indigo-600 hover:scale-110'>Agendar cita</button></a>
+                </div>
+        
+                <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+                    <!-- image - start -->
+                    <a href="#"
+                        class="group relative flex h-80 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-50">
+                        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600" loading="lazy" alt="Photo by Minh Pham" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+        
+                        <div
+                            class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                        </div>
+        
+                        <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">VR</span>
+                    </a>
+                    <!-- image - end -->
+        
+                    <!-- image - start -->
+                    <a href="#"
+                        class="group relative flex h-80 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-50">
+                        <img src="https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?auto=format&q=75&fit=crop&w=1000" loading="lazy" alt="Photo by Magicle" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+        
+                        <div
+                            class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                        </div>
+        
+                        <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Tech</span>
+                    </a>
+                    <!-- image - end -->
+        
+                    <!-- image - start -->
+                    <a href="#"
+                        class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                        <img src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=1000" loading="lazy" alt="Photo by Martin Sanchez" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+        
+                        <div
+                            class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                        </div>
+        
+                        <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Dev</span>
+                    </a>
+                    <!-- image - end -->
+        
+                    <!-- image - start -->
+                    <a href="#"
+                        class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600" loading="lazy" alt="Photo by Lorenzo Herrera" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+        
+                        <div
+                            class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                        </div>
+        
+                        <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Retro</span>
+                    </a>
+
+                    <!-- image - end -->
+                </div>
+                
+            </div>
         </div>
+        
+     
+        
     </section>
+
+    <section class="home" id="home">
+        <div class="bg-black dark:bg-gray-800 h-screen h-full py-6 sm:py-8 lg:py-12">
+            <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+                <div class="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
+                    <div class="flex items-center gap-12 flex-col">
+                        <h2 class="text-5xl font-bold text-white lg:text-5xl dark:text-white">Servicios</h2>
+        
+                        <p class="hidden max-w-screen-xl text-white dark:text-gray-300 md:block">
+                            Aqui puedes encontrar los diferentes servicios que tenemos disponibles con sus respectivos costos.
+                            <br>
+                            Si cuentas con alguna inquietud no dudes en escribirnos y estaremos atentos para que puedas reservar con nosotros.
+                        </p>
+                    </div>
+        
+
+                    <a href="index.html#citas"><button type='button' class='items-center py-5 px-8 text-lg rounded-lg bg-indigo-700 text-white cursor-pointer font-semibold  shadow-xs transition-all duration-400 hover:bg-indigo-600 hover:scale-110'>Agendar cita</button></a>
+                </div>
+        
+                <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+                    <!-- image - start -->
+                    <a href="#"
+                        class="group relative flex h-80 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-50">
+                        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600" loading="lazy" alt="Photo by Minh Pham" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+        
+                        <div
+                            class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                        </div>
+        
+                        <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">VR</span>
+                    </a>
+                    <!-- image - end -->
+        
+                    <!-- image - start -->
+                    <a href="#"
+                        class="group relative flex h-80 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-50">
+                        <img src="https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?auto=format&q=75&fit=crop&w=1000" loading="lazy" alt="Photo by Magicle" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+        
+                        <div
+                            class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                        </div>
+        
+                        <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Tech</span>
+                    </a>
+                    <!-- image - end -->
+        
+                    <!-- image - start -->
+                    <a href="#"
+                        class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                        <img src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=1000" loading="lazy" alt="Photo by Martin Sanchez" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+        
+                        <div
+                            class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                        </div>
+        
+                        <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Dev</span>
+                    </a>
+                    <!-- image - end -->
+        
+                    <!-- image - start -->
+                    <a href="#"
+                        class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600" loading="lazy" alt="Photo by Lorenzo Herrera" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+        
+                        <div
+                            class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                        </div>
+        
+                        <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Retro</span>
+                    </a>
+
+                    <!-- image - end -->
+                </div>
+                
+            </div>
+        </div>
+        
+     
+    </section>
+    
     <!-- Fin Nosotros -->
 
+    
+<!-- inicio footer -->
+<footer class="footer">
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Kingdom Barber - Todos los derechos reservados.</p>
+    </div>
+</footer>
+<!-- fin de footer -->
 
 
 
-
-    <!-- inicio footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-info">
-                <div class="footer-details">
-                    <h3>Sede Bello</h3>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contacto</h4>
-                    <ul>
-                        <li>Dirección: Calle 50 # 50 - 20</li>
-                        <li>Teléfono: +123 456 789</li>
-                        <li>Email: contacto@kbarber.com</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-info">
-                <div class="footer-details">
-                    <h3>Sede El Tesoro</h3>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contacto</h4>
-                    <ul>
-                        <li>Dirección: Calle 50 # 50 - 20</li>
-                        <li>Teléfono: +123 456 789</li>
-                        <li>Email: contacto@kbarber.com</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-info">
-                <div class="footer-details">
-                    <h3>Horario</h3>
-                </div>
-                <div class="footer-contact">
-                    <ul>
-                        <li>Lunes a Sabado: 7am - 9:15pm</li>
-                        <li>​​Domingo: Cerrado</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2024 Kingdom Barber - Todos los derechos reservados.</p>
-        </div>
-    </footer>
-    <!-- fin de footer -->
+    
 
     <script src="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.bundle.js"></script>
     <script src="scrip.js"></script>
