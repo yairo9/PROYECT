@@ -261,6 +261,7 @@ generarHoras();
 //fin
 
 //barra busqueda
+// Barra de búsqueda
 // Variables necesarias
 const searchInput = document.getElementById('search-box'); // Barra de búsqueda
 const searchResults = document.createElement('ul'); // Lista de resultados sugeridos
@@ -269,12 +270,56 @@ document.querySelector('.search-form').appendChild(searchResults);
 
 // Diccionario con las secciones y palabras clave
 const sections = {
-    "nosotros": "#home",
-    "servicios": "#menu",
-    "citas": "#citas",
-    "tienda": "#products",
-    "contactos": "#contact",
-    "sedes": "#mapa"
+    "nosotros": "index.html#home",
+    "servicios": "servicios.html",
+    "citas": "index.html#citas",
+    "tienda": "index.html#products",
+    "contactos": "index.html#contact",
+    "sedes": "index.html#mapa",
+    "mapa": "index.html#mapa",
+    "diseño y estilo": "servicios.html#diseno-estilo",
+    "cuidado facial": "servicios.html#cuidado-facial",
+    "corte de cabello": "servicios.html#corte",
+    "corte cabello": "servicios.html#corte",
+    "cabello": "servicios.html#corte",
+    "barbería": "servicios.html#barba",
+    "corte": "servicios.html#corte",
+    "barba": "servicios.html#barba",
+    "barberia": "servicios.html#barba",
+    "afeitado": "servicios.html#barba", // Palabra clave adicional para barba
+    "cejas": "servicios.html#cejas",
+    "ceja": "servicios.html#cejas",
+    "tinta": "servicios.html#tinte",
+    "tintas": "servicios.html#tinte",
+    "tinte": "servicios.html#tinte",
+    "limpieza facial": "servicios.html#limpieza-facial",
+    "exfoliación": "servicios.html#exfoliacion-facial",
+    "mascarilla": "servicios.html#mascarilla-facial",
+    "hidratación": "servicios.html#hidratacion-facial",
+    "limpieza": "servicios.html#limpieza-facial",
+    "exfoliacion": "servicios.html#exfoliacion-facial",
+    "mascarillas": "servicios.html#mascarilla-facial",
+    "hidratacion": "servicios.html#hidratacion-facial",
+    "servicios": "servicios.html",
+    "servicio": "servicios.html",
+    "servicios de corte": "servicios.html#corte",
+    "servicios de barbería": "servicios.html#barba",
+    "servicios de cejas": "servicios.html#cejas",
+    "inicio sesion": "index.html#registro",
+    "registro": "index.html#registro",
+    "login": "index.html#registro",
+    "registro de usuario": "index.html#registro",
+    "registro usuario": "index.html#registro",
+    "crear cuenta": "index.html#registro",
+    "crear usuario": "index.html#registro",
+    "usuario": "index.html#registro",
+    "usuarios": "index.html#registro",
+    "contraseña": "index.html#registro",
+    "contraseñas": "index.html#registro",
+    "password": "index.html#registro",
+    "exfoliación facial": "servicios.html#exfoliacion-facial",
+    "mascarilla facial": "servicios.html#mascarilla-facial",
+    "hidratación facial": "servicios.html#hidratacion-facial"
 };
 
 // Función para filtrar y mostrar sugerencias
@@ -320,3 +365,4 @@ searchInput.addEventListener('keydown', function (event) {
     }
 });
 
+//fin
