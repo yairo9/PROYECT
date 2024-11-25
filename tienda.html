@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kingdom Barber</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scr/css/servicios.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="shortcut icon" href="scr/imagenes/favicon.png">
+    <link rel="shortcut icon" href="imagenes/favicon.png">
 
 </head>
 
@@ -20,9 +20,9 @@
             <img src="scr/imagenes/Logo barber.png" alt="Logo barberia"></a>
         <nav class="navbar">
             <a href="#home">Nosotros</a>
-            <a href="#menu">Servicios</a>
+            <a href="servicios.html">Servicios</a>
             <a href="#citas" class="citas-btn">Citas</a>
-            <a href="#products">Tienda</a>
+            <a href="tienda.html">Tienda</a>
             <a href="#contact">Contactos</a>
             <a href="#mapa">Sedes</a>
             <a href="#registro" class="registro-btn" data-modal-target="authentication-modal"
@@ -265,260 +265,199 @@
 
 
 
-    <!-- Principio Nosotros -->
-    <section class="home" id="home">
-        <div class="content">
-            <h3></h3>
-            <p></p>
+    <!-- Servicios -->
+
+    <h1 class="heading">Tienda</h1>
+
+    <div class="text-center p-10">
+        <h1 class="font-bold text-4xl mb-4 text-white">Tienda</h1>
+    </div>
+
+    <!-- ✅ Grid Section - Starts Here 👇 -->
+    <section id="Projects"
+        class="w-fit mx-auto grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
+
+        <!--   ✅ Product card 1 - Starts Here 👇 -->
+        <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+            <a href="#">
+                <img src="https://i.pinimg.com/736x/44/9a/7a/449a7a9bf89e2c73935ae84bdbc3499c.jpg"
+                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                <div class="px-4 py-3 w-72">
+                    <span class="text-gray-400 mr-3 uppercase text-xs">Dove</span>
+                    <p class="text-lg font-bold text-black truncate block capitalize">Locion de ceratina</p>
+                    <div class="flex items-center">
+                        <p class="text-lg font-semibold text-black cursor-auto my-3">$90.000</p>
+                        <del>
+                            <p class="text-sm text-gray-600 cursor-auto ml-2">$100.000</p>
+                        </del>
+                        <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                <path
+                                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                            </svg></div>
+                    </div>
+                </div>
+            </a>
         </div>
-    </section>
-    <!-- Fin Nosotros -->
+        <!--   🛑 Product card 1 - Ends Here  -->
 
+        <!--   ✅ Product card 2 - Starts Here 👇 -->
+        <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+            <a href="#">
+                <img src="https://i.pinimg.com/736x/0f/52/08/0f52080971f14bbe45542bc287de5e54.jpg"
+                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                <div class="px-4 py-3 w-72">
+                    <span class="text-gray-400 mr-3 uppercase text-xs">Tahe</span>
+                    <p class="text-lg font-bold text-black truncate block capitalize">Shampoo capilar</p>
+                    <div class="flex items-center">
+                        <p class="text-lg font-semibold text-black cursor-auto my-3">$75.000</p>
+                        <del>
+                            <p class="text-sm text-gray-600 cursor-auto ml-2">$90.000</p>
+                        </del>
+                        <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                <path
+                                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                            </svg></div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--   🛑 Product card 2- Ends Here  -->
 
-    <!-- Inicio Servicios -->
+        <!--   ✅ Product card 3 - Starts Here 👇 -->
+        <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+            <a href="#">
+                <img src="https://i.pinimg.com/736x/fb/ca/77/fbca770e0b0424d515333b4fb125ce9e.jpg"
+                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                <div class="px-4 py-3 w-72">
+                    <span class="text-gray-400 mr-3 uppercase text-xs">Wahl</span>
+                    <p class="text-lg font-bold text-black truncate block capitalize">Maquina de corte dorada</p>
+                    <div class="flex items-center">
+                        <p class="text-lg font-semibold text-black cursor-auto my-3">$350.000</p>
+                        <del>
+                            <p class="text-sm text-gray-600 cursor-auto ml-2">$400.000</p>
+                        </del>
+                        <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                <path
+                                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                            </svg></div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--   🛑 Product card 3 - Ends Here  -->
 
+        <!--   ✅ Product card 4 - Starts Here 👇 -->
+        <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+            <a href="#">
+                <img src="https://i.pinimg.com/736x/41/ea/44/41ea44124ff693fff4810a790f2397d9.jpg"
+                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                <div class="px-4 py-3 w-72">
+                    <span class="text-gray-400 mr-3 uppercase text-xs">Remington</span>
+                    <p class="text-lg font-bold text-black truncate block capitalize">Maquina de corte color carbon</p>
+                    <div class="flex items-center">
+                        <p class="text-lg font-semibold text-black cursor-auto my-3">$380.000</p>
+                        <del>
+                            <p class="text-sm text-gray-600 cursor-auto ml-2">$420.000</p>
+                        </del>
+                        <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                <path
+                                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                            </svg></div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--   🛑 Product card 4 - Ends Here  -->
 
+        <!--   ✅ Product card 5 - Starts Here 👇 -->
+        <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+            <a href="#">
+                <img src="https://i.pinimg.com/736x/6d/e7/65/6de765929eab65922281f54777cb724e.jpg"
+                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                <div class="px-4 py-3 w-72">
+                    <span class="text-gray-400 mr-3 uppercase text-xs">Shark</span>
+                    <p class="text-lg font-bold text-black truncate block capitalize">Juego de tijeras en carbono</p>
+                    <div class="flex items-center">
+                        <p class="text-lg font-semibold text-black cursor-auto my-3">$180.000</p>
+                        <del>
+                            <p class="text-sm text-gray-600 cursor-auto ml-2">$200.000</p>
+                        </del>
+                        <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                <path
+                                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                            </svg></div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--   🛑 Product card 5 - Ends Here  -->
 
-    <section class="menu" id="menu">
+        <!--   ✅ Product card 6 - Starts Here 👇 -->
+        <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+            <a href="#">
+                <img src="https://i.pinimg.com/736x/d1/87/be/d187bef2e4b59a39e881bd28586a79e9.jpg"
+                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                <div class="px-4 py-3 w-72">
+                    <span class="text-gray-400 mr-3 uppercase text-xs">Shark</span>
+                    <p class="text-lg font-bold text-black truncate block capitalize">Tijera de corte plateada</p>
+                    <div class="flex items-center">
+                        <p class="text-lg font-semibold text-black cursor-auto my-3">$85.000</p>
+                        <del>
+                            <p class="text-sm text-gray-600 cursor-auto ml-2">$100.000</p>
+                        </del>
+                        <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                <path
+                                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                            </svg></div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--   🛑 Product card 6 - Ends Here  -->
 
         
-        <h1 class="heading">Servicios</h1>
-
-        <p>En nuestra barbería ofrecemos una amplia variedad de servicios de corte de cabello, diseñados para adaptarse a tu estilo y personalidad.</p>
-
-        <div>
-            <img src="https://i.pinimg.com/control2/736x/d6/c7/7f/d6c77f64ee023a94422f132f269b7d32.jpg" alt="Corte1">
-            <img src="https://i.pinimg.com/736x/3b/62/7c/3b627c579eb14ff8108a656ad0b7498a.jpg" alt="Corte2">
-            <img src="https://i.pinimg.com/control2/736x/fe/c1/21/fec121b70ea9b6e7a6b33459a91da151.jpg"
-                alt="Corte diseño">
-            <img src="https://i.pinimg.com/control2/736x/ac/1a/fc/ac1afcd603ed2fa236941cf3cb99fcdd.jpg"
-                alt="Corte niños">
-            <img src="https://i.pinimg.com/736x/79/b1/82/79b1826eda1675b49e65f3e69f8e9e5c.jpg" alt="Corte cejas">
-        </div>
-
-        <a href="servicios.html"><button type='button' class='items-center py-2.5 px-6 text-lg rounded-lg bg-indigo-700 text-white cursor-pointer font-semibold  shadow-xs transition-all duration-400 hover:bg-indigo-600 hover:scale-110'>Ver mas servicios</button></a>
-
-    </section>
-    <!-- Fin servicios -->
 
 
-    <!-- Inicio sección de citas -->
-    <section id="citas" class="citas p-6">
-        <div class="flex flex-wrap items-start justify-between max-w-7xl mx-auto bg-gray-900 rounded-lg shadow-lg">
-            <!-- Calendario -->
-            <div class="w-full md:w-1/2 p-4">
-                <div class="text-center text-white mb-4">
-                    <h2 class="text-2xl font-bold">Selecciona una fecha</h2>
-                </div>
-                <div class="grid grid-cols-7 gap-2" id="calendario">
-                    <!-- Los días del mes se generarán dinámicamente con JavaScript -->
-                </div>
-            </div>
-    
-            <!-- Formulario -->
-            <div class="w-full md:w-1/2 bg-white p-6 rounded-lg shadow-md">
-                <h2 class="text-lg font-bold text-gray-800 mb-4">Completa tus datos</h2>
-                <form id="citaForm">
-                    <label for="nombre" class="block mb-2 text-sm text-gray-600">Nombre:</label>
-                    <input type="text" id="nombre" class="w-full p-2 border rounded-lg mb-4" placeholder="Tu nombre" required>
-    
-                    <label for="hora" class="block mb-2 text-sm text-gray-600">Hora:</label>
-                    <select id="hora" class="w-full p-2 border rounded-lg mb-4 bg-gray-50 text-gray-800">
-                        <!-- Las horas disponibles se generarán dinámicamente con JavaScript -->
-                    </select>
-    
-                    <button type="button" onclick="agendarCita()" class="w-full py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700">
-                        Agendar Cita
-                    </button>
-                </form>
-                <div id="mensaje" class="mt-4 text-center"></div>
-            </div>
-        </div>
-    </section>             
-    <!-- Fin seccion de citas -->
+    <!-- 🛑 Grid Section - Ends Here -->
 
+</section>
 
-    <!-- Inicio Tienda -->
-
-    <section class="products" id="products">
-
-        
-        <h1 class="heading">Tienda</h1>
-
-        <p>¡Dale un vistazo a nuestra tienda y convierte tu día a día en todo un ritual de estilo y cuidado! <br> Porque sabemos que te importa cómo te ves, y en Kingdom Barber nos encargamos de que siempre luzcas bien.</p>
-
-        <div>
-            <img src="https://i.pinimg.com/control2/736x/ea/64/34/ea6434f2f95ba9707bd73cb52bbefa9b.jpg" alt="Producto1">
-            <img src="https://i.pinimg.com/736x/af/c8/b9/afc8b9483874ea9695ac045f69ab93cd.jpg" alt="Producto2">
-            <img src="https://i.pinimg.com/736x/b5/dc/af/b5dcaf96cc32aef9d0564d37b7ab78a8.jpg"
-                alt="Producto3">
-            <img src="https://i.pinimg.com/736x/41/ea/44/41ea44124ff693fff4810a790f2397d9.jpg"
-                alt="Producto4">
-            <img src="https://i.pinimg.com/736x/3c/38/b1/3c38b1aeb369c155d177ca67c2dc639a.jpg" alt="Producto5">
-        </div>
-
-        <a href="tienda.html"><button type='button' class='items-center py-2.5 px-6 text-lg rounded-lg bg-indigo-700 text-white cursor-pointer font-semibold  shadow-xs transition-all duration-400 hover:bg-indigo-600 hover:scale-110'>Ingresar a la tienda</button></a>
-
-    </section>
 
 
 
     <!-- Fin Tienda -->
 
 
-    <!-- Inicio contactos -->
-    <section class="contact" id="contact">
-        <h1 class="heading">Contactos<span></span></h1>
-        <div class="box-container">
-            <div class="row">
-                <div class="barber">
-                    <div class="image">
-                        <img src="https://i.pinimg.com/736x/ef/bf/47/efbf478fb5120cab84983bf14b12a062.jpg" alt="Barbero 1">
-                    </div>
-                    <div class="content">
-                        <h3>Juan Pérez</h3>
-                        <p><strong>Email:</strong> juan.perez@email.com</p>
-                        <p><strong>Teléfono:</strong> +123 456 7890</p>
-                        <p><strong>Instagram:</strong> @juanperez_barber</p>
-                        <!-- Redes Sociales en Vertical -->
-                        <div class="social-links">
-                            <a href="https://wa.me/1234567890" target="_blank" class="social-icon">
-                                <i class="fab fa-whatsapp"></i> WhatsApp
-                            </a>
-                            <a href="https://www.instagram.com/juanperez_barber" target="_blank" class="social-icon">
-                                <i class="fab fa-instagram"></i> Instagram
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="barber">
-                    <div class="image">
-                        <img src="https://i.pinimg.com/736x/61/84/f8/6184f814c0e45527e449f9a5ba8ad6d4.jpg" alt="Barbero 2">
-                    </div>
-                    <div class="content">
-                        <h3>Cndidan Argaez</h3>
-                        <p><strong>Email:</strong> ana.garcia@email.com</p>
-                        <p><strong>Teléfono:</strong> +123 456 7891</p>
-                        <p><strong>Instagram:</strong> @anagarcia_barber</p>
-
-                        <!-- Redes Sociales en Vertical -->
-                        <div class="social-links">
-                            <a href="https://wa.me/1234567891" target="_blank" class="social-icon">
-                                <i class="fab fa-whatsapp"></i> WhatsApp
-                            </a>
-                            <a href="https://www.instagram.com/anagarcia_barber" target="_blank" class="social-icon">
-                                <i class="fab fa-instagram"></i> Instagram
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="barber">
-                    <div class="image">
-                        <img src="https://i.pinimg.com/control2/736x/29/7f/18/297f18718301167ae4f4a193f84f772c.jpg" alt="Barbero 3">
-                    </div>
-                    <div class="content">
-                        <h3>Carlos López</h3>
-                        <p><strong>Email:</strong> carlos.lopez@email.com</p>
-                        <p><strong>Teléfono:</strong> +123 456 7892</p>
-                        <p><strong>Instagram:</strong> @carloslopez_barber</p>
-
-                        <!-- Redes Sociales en Vertical -->
-                        <div class="social-links">
-                            <a href="https://wa.me/1234567892" target="_blank" class="social-icon">
-                                <i class="fab fa-whatsapp"></i> WhatsApp
-                            </a>
-                            <a href="https://www.instagram.com/carloslopez_barber" target="_blank" class="social-icon">
-                                <i class="fab fa-instagram"></i> Instagram
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="barber">
-                    <div class="image">
-                        <img src="https://i.pinimg.com/control2/736x/a5/3a/ab/a53aab17831a0364da8841de99c7afd9.jpg" alt="Barbero 4">
-                    </div>
-                    <div class="content">
-                        <h3>Carlos López</h3>
-                        <p><strong>Email:</strong> carlos.lopez@email.com</p>
-                        <p><strong>Teléfono:</strong> +123 456 7892</p>
-                        <p><strong>Instagram:</strong> @carloslopez_barber</p>
-
-                        <!-- Redes Sociales en Vertical -->
-                        <div class="social-links">
-                            <a href="https://wa.me/1234567892" target="_blank" class="social-icon">
-                                <i class="fab fa-whatsapp"></i> WhatsApp
-                            </a>
-                            <a href="https://www.instagram.com/carloslopez_barber" target="_blank" class="social-icon">
-                                <i class="fab fa-instagram"></i> Instagram
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- Fin contactos -->
-
-
-    <!-- Inicio Mapa -->
-    <section class="content mapa" id="mapa">
-        <iframe src="https://www.google.com/maps/d/embed?mid=1UghUE7HuOiYwNQYHlobXSNH_d7Oc10Q&ehbc=2E312F&noprof=1"
-            width="100%" height="350"></iframe>
-    </section>
-    <!-- Fin Mapa -->
-
-
     <!-- inicio footer -->
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-info">
-                <div class="footer-details">
-                    <h3>Sede Bello</h3>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contacto</h4>
-                    <ul>
-                        <li>Dirección: Calle 50 # 50 - 20</li>
-                        <li>Teléfono: +123 456 789</li>
-                        <li>Email: contacto@kbarber.com</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-info">
-                <div class="footer-details">
-                    <h3>Sede El Tesoro</h3>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contacto</h4>
-                    <ul>
-                        <li>Dirección: Calle 50 # 50 - 20</li>
-                        <li>Teléfono: +123 456 789</li>
-                        <li>Email: contacto@kbarber.com</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-info">
-                <div class="footer-details">
-                    <h3>Horario</h3>
-                </div>
-                <div class="footer-contact">
-                    <ul>
-                        <li>Lunes a Sabado: 7am - 9:15pm</li>
-                        <li>​​Domingo: Cerrado</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
         <div class="footer-bottom">
             <p>&copy; 2024 Kingdom Barber - Todos los derechos reservados.</p>
         </div>
     </footer>
     <!-- fin de footer -->
+
+
+
+
 
     <script src="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.bundle.js"></script>
     <script src="scrip.js"></script>
