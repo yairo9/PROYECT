@@ -19,13 +19,53 @@ document.querySelector('#search-btn').onclick = () => {
     if (cartItem) cartItem.classList.remove('active');
 };
 
-// Evento de clic en el botón de carrito
-document.querySelector('#cart-btn').onclick = () => {
-    cartItem.classList.toggle('active');
-    // Eliminamos las clases "active" de los otros elementos
-    if (navbar) navbar.classList.remove('active');
-    if (searchForm) searchForm.classList.remove('active');
+
+// Variables necesarias para el carrito
+const cartItemsContainer = document.querySelector('.cart-items-container'); // Contenedor del carrito
+const cartBtn = document.querySelector('#cart-btn'); // Botón del carrito
+const cartItemTemplate = document.querySelector('.cart-item'); // Plantilla del carrito (puedes tener un cart-item vacío para copiar)
+
+// Evento de clic en el botón "Agregar al carrito"
+const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+addToCartButtons.forEach(button => {
+    button.addEventListener('click', function () {
+        const itemName = this.getAttribute('data-name'); // Nombre del servicio/producto
+        const itemPrice = this.getAttribute('data-price'); // Precio del servicio/producto
+
+        // Crear un nuevo item de carrito
+        const newCartItem = cartItemTemplate.cloneNode(true); // Clonamos el elemento cart-item
+        newCartItem.classList.remove('hidden'); // Aseguramos que no esté oculto (por si es una plantilla)
+        
+        // Actualizar el contenido del nuevo item de carrito
+        const content = newCartItem.querySelector('.content');
+        content.querySelector('h3').textContent = itemName;
+        content.querySelector('.price').textContent = `$${itemPrice}/-`;
+
+        // Agregar el nuevo item al carrito
+        cartItemsContainer.appendChild(newCartItem);
+
+        // Mostrar el carrito si no está vacío
+        cartItemsContainer.classList.add('active');
+    });
+});
+
+// Evento de clic en el botón del carrito
+cartBtn.onclick = () => {
+    cartItemsContainer.classList.toggle('active');
+    if (navbar) navbar.classList.remove('active'); // Opcional: Ocultar navbar si está visible
 };
+
+// Función para mostrar el carrito si tiene items
+function updateCartVisibility() {
+    // Si hay ítems en el carrito, mostrarlo
+    if (cartItemsContainer.children.length > 0) {
+        cartItemsContainer.classList.add('active');
+    } else {
+        // Si no hay ítems, ocultarlo
+        cartItemsContainer.classList.remove('active');
+    }
+}
+//fin
 
 // Evento de scroll en la ventana
 window.onscroll = () => {
