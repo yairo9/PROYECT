@@ -16,16 +16,16 @@
 
 <body class="Alkatra">
     <header class="header">
-        <a href="#" class="logo max-w-xs transition duration-150 ease-in-out hover:scale-110">
+        <a href="index.html#home" class="logo max-w-xs transition duration-150 ease-in-out hover:scale-110">
             <img src="scr/imagenes/Logo barber.png" alt="Logo barberia"></a>
         <nav class="navbar">
-            <a href="#home">Nosotros</a>
-            <a href="#menu">Servicios</a>
-            <a href="#citas" class="citas-btn">Citas</a>
-            <a href="#products">Tienda</a>
-            <a href="#contact">Contactos</a>
-            <a href="#mapa">Sedes</a>
-            <a href="#registro" class="registro-btn" data-modal-target="authentication-modal"
+            <a href="index.html#home">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="index.html#citas" class="citas-btn">Citas</a>
+            <a href="index.html#products">Tienda</a>
+            <a href="index.html#contact">Contactos</a>
+            <a href="index.html#mapa">Sedes</a>
+            <a href="index.html#registro" class="registro-btn" data-modal-target="authentication-modal"
                 data-modal-toggle="authentication-modal">
                 <i class="fas fa-user-plus"></i> Ingreso</a>
 
@@ -198,17 +198,20 @@
             <label for="search-box" class="fas fa-search"></label>
         </div>
 
+        <!-- Contenedor del carrito -->
         <div class="cart-items-container">
-            <div class="cart-item">
+            <!-- Este es el item vacío del carrito, se utilizará como plantilla -->
+            <div class="cart-item hidden">
                 <span class="content"></span>
                 <img src="scr/imagenes/cepillo-barbero-fade-captain-cook-negro_512x512.webp" alt="">
                 <div class="content">
-                    <h3>Cepillo barbero</h3>
-                    <div class="price">$10.000/-</div>
+                    <h3></h3> <!-- Nombre del producto -->
+                    <div class="price"></div> <!-- Precio -->
                 </div>
             </div>
+            <!-- Fin carrito -->
         </div>
-        <!-- Fin carrito -->
+
 
         <!-- Inicio Logos redes sociales -->
         <div class="redessociales">
@@ -281,10 +284,11 @@
 
     <section class="menu" id="menu">
 
-        
+
         <h1 class="heading">Servicios</h1>
 
-        <p>En nuestra barbería ofrecemos una amplia variedad de servicios de corte de cabello, diseñados para adaptarse a tu estilo y personalidad.</p>
+        <p>En nuestra barbería ofrecemos una amplia variedad de servicios de corte de cabello, diseñados para adaptarse
+            a tu estilo y personalidad.</p>
 
         <div>
             <img src="https://i.pinimg.com/control2/736x/d6/c7/7f/d6c77f64ee023a94422f132f269b7d32.jpg" alt="Corte1">
@@ -296,7 +300,9 @@
             <img src="https://i.pinimg.com/736x/79/b1/82/79b1826eda1675b49e65f3e69f8e9e5c.jpg" alt="Corte cejas">
         </div>
 
-        <a href="servicios.html"><button type='button' class='items-center py-2.5 px-6 text-lg rounded-lg bg-indigo-700 text-white cursor-pointer font-semibold  shadow-xs transition-all duration-400 hover:bg-indigo-600 hover:scale-110'>Ver mas servicios</button></a>
+        <a href="servicios.html"><button type='button'
+                class='items-center py-2.5 px-6 text-lg rounded-lg bg-indigo-700 text-white cursor-pointer font-semibold  shadow-xs transition-all duration-400 hover:bg-indigo-600 hover:scale-110'>Ver
+                mas servicios</button></a>
 
     </section>
     <!-- Fin servicios -->
@@ -314,27 +320,29 @@
                     <!-- Los días del mes se generarán dinámicamente con JavaScript -->
                 </div>
             </div>
-    
+
             <!-- Formulario -->
             <div class="w-full md:w-1/2 bg-white p-6 rounded-lg shadow-md">
                 <h2 class="text-lg font-bold text-gray-800 mb-4">Completa tus datos</h2>
                 <form id="citaForm">
                     <label for="nombre" class="block mb-2 text-sm text-gray-600">Nombre:</label>
-                    <input type="text" id="nombre" class="w-full p-2 border rounded-lg mb-4" placeholder="Tu nombre" required>
-    
+                    <input type="text" id="nombre" class="w-full p-2 border rounded-lg mb-4" placeholder="Tu nombre"
+                        required>
+
                     <label for="hora" class="block mb-2 text-sm text-gray-600">Hora:</label>
                     <select id="hora" class="w-full p-2 border rounded-lg mb-4 bg-gray-50 text-gray-800">
                         <!-- Las horas disponibles se generarán dinámicamente con JavaScript -->
                     </select>
-    
-                    <button type="button" onclick="agendarCita()" class="w-full py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700">
+
+                    <button type="button" onclick="agendarCita()"
+                        class="w-full py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700">
                         Agendar Cita
                     </button>
                 </form>
                 <div id="mensaje" class="mt-4 text-center"></div>
             </div>
         </div>
-    </section>             
+    </section>
     <!-- Fin seccion de citas -->
 
 
@@ -342,18 +350,17 @@
 
     <section class="products" id="products">
 
-        
+
         <h1 class="heading">Tienda</h1>
 
-        <p>¡Dale un vistazo a nuestra tienda y convierte tu día a día en todo un ritual de estilo y cuidado! <br> Porque sabemos que te importa cómo te ves, y en Kingdom Barber nos encargamos de que siempre luzcas bien.</p>
+        <p>¡Dale un vistazo a nuestra tienda y convierte tu día a día en todo un ritual de estilo y cuidado! <br> Porque
+            sabemos que te importa cómo te ves, y en Kingdom Barber nos encargamos de que siempre luzcas bien.</p>
 
         <div>
             <img src="https://i.pinimg.com/control2/736x/ea/64/34/ea6434f2f95ba9707bd73cb52bbefa9b.jpg" alt="Producto1">
             <img src="https://i.pinimg.com/736x/af/c8/b9/afc8b9483874ea9695ac045f69ab93cd.jpg" alt="Producto2">
-            <img src="https://i.pinimg.com/736x/b5/dc/af/b5dcaf96cc32aef9d0564d37b7ab78a8.jpg"
-                alt="Producto3">
-            <img src="https://i.pinimg.com/736x/41/ea/44/41ea44124ff693fff4810a790f2397d9.jpg"
-                alt="Producto4">
+            <img src="https://i.pinimg.com/736x/b5/dc/af/b5dcaf96cc32aef9d0564d37b7ab78a8.jpg" alt="Producto3">
+            <img src="https://i.pinimg.com/736x/41/ea/44/41ea44124ff693fff4810a790f2397d9.jpg" alt="Producto4">
             <img src="https://i.pinimg.com/736x/3c/38/b1/3c38b1aeb369c155d177ca67c2dc639a.jpg" alt="Producto5">
         </div>
 
@@ -373,7 +380,8 @@
             <div class="row">
                 <div class="barber">
                     <div class="image">
-                        <img src="https://i.pinimg.com/736x/ef/bf/47/efbf478fb5120cab84983bf14b12a062.jpg" alt="Barbero 1">
+                        <img src="https://i.pinimg.com/736x/ef/bf/47/efbf478fb5120cab84983bf14b12a062.jpg"
+                            alt="Barbero 1">
                     </div>
                     <div class="content">
                         <h3>Juan Pérez</h3>
@@ -394,7 +402,8 @@
 
                 <div class="barber">
                     <div class="image">
-                        <img src="https://i.pinimg.com/736x/61/84/f8/6184f814c0e45527e449f9a5ba8ad6d4.jpg" alt="Barbero 2">
+                        <img src="https://i.pinimg.com/736x/61/84/f8/6184f814c0e45527e449f9a5ba8ad6d4.jpg"
+                            alt="Barbero 2">
                     </div>
                     <div class="content">
                         <h3>Cndidan Argaez</h3>
@@ -416,7 +425,8 @@
 
                 <div class="barber">
                     <div class="image">
-                        <img src="https://i.pinimg.com/control2/736x/29/7f/18/297f18718301167ae4f4a193f84f772c.jpg" alt="Barbero 3">
+                        <img src="https://i.pinimg.com/control2/736x/29/7f/18/297f18718301167ae4f4a193f84f772c.jpg"
+                            alt="Barbero 3">
                     </div>
                     <div class="content">
                         <h3>Carlos López</h3>
@@ -438,7 +448,8 @@
 
                 <div class="barber">
                     <div class="image">
-                        <img src="https://i.pinimg.com/control2/736x/a5/3a/ab/a53aab17831a0364da8841de99c7afd9.jpg" alt="Barbero 4">
+                        <img src="https://i.pinimg.com/control2/736x/a5/3a/ab/a53aab17831a0364da8841de99c7afd9.jpg"
+                            alt="Barbero 4">
                     </div>
                     <div class="content">
                         <h3>Carlos López</h3>
