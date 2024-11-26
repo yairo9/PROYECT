@@ -196,30 +196,6 @@ body {
     text-align: center;
 }
 
-/* Sección de inicio */
-.home {
-    min-height: 150vh;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-position: center ;
-    padding: 130px 80px 0px;
-}
-
-.home h2 {
-    font-size: 40px;
-    text-transform: uppercase;
-    color: #ffffff ;
-}
-
-.home p {
-    font-size: 18px;
-    font-weight: lighter;
-    line-height: 1.8;
-    padding: 30px;
-    color:#ffffff;
-
-}
 
 .redessociales{
     position: fixed;
@@ -305,6 +281,7 @@ body {
         height: calc(100vh - 9.5rem); /* Tamaño completo de la pantalla */
     }
 
+
     .header .navbar.active {
         right: 0; /* Muestra el menú cuando está activo */
     }
@@ -320,20 +297,6 @@ body {
         width: 90%;
         right: 2rem;
     }
-
-    .home {
-        background-position: left;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .home .content h3 {
-        font-size: 4.5rem;
-    }
-
-    .home .content p {
-        font-size: 1.5rem;
-    }
 }
 
 /* Media Queries para pantallas extra pequeñas */
@@ -341,35 +304,4 @@ body {
     html {
         font-size: 50%; /* Reduce aún más el tamaño base */
     }
-}
-
-#imageModal {
-    display: none; /* Esconde el modal por defecto */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
-    justify-content: center;
-    align-items: center;
-}
-
-#imageModal .modal-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 90%;
-    margin: auto;
-}
-
-#closeModal {
-    background: transparent;
-    border: none;
-    font-size: 1.5rem;
-    color: #333;
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    right: 10px;
 }
