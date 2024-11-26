@@ -16,7 +16,7 @@
 
 <body class="Alkatra">
     <header class="header">
-        <a href="#" class="logo max-w-xs transition duration-150 ease-in-out hover:scale-110">
+        <a href="index.html#home" class="logo max-w-xs transition duration-150 ease-in-out hover:scale-110">
             <img src="scr/imagenes/Logo barber.png" alt="Logo barberia"></a>
         <nav class="navbar">
             <a href="index.html#home">Nosotros</a>
@@ -25,7 +25,7 @@
             <a href="tienda.html">Tienda</a>
             <a href="index.html#contact">Contactos</a>
             <a href="index.html#mapa">Sedes</a>
-            <a href="#registro" class="registro-btn" data-modal-target="authentication-modal"
+            <a href="index.html#registro" class="registro-btn" data-modal-target="authentication-modal"
                 data-modal-toggle="authentication-modal">
                 <i class="fas fa-user-plus"></i> Ingreso</a>
 
@@ -33,6 +33,7 @@
             <div id="authentication-modal" aria-hidden="true"
                 class="hidden overflow-x-hidden overflow-y-auto fixed h-modal md:h-full top-4 left-0 right-0 md:inset-0 z-50 justify-center items-center">
                 <div class="relative w-full max-w-md px-4 h-full md:h-auto">
+
                     <!-- Inicio contenido moral para ingresar -->
                     <div class="bg-white rounded-lg shadow relative dark:bg-gray-700">
                         <div class="flex justify-end p-2">
@@ -89,6 +90,7 @@
                         </form>
                     </div>
                     <!-- Fin contenido moral para ingresar -->
+
                 </div>
             </div>
             <!-- Fin boton modal para Ingresar -->
@@ -127,6 +129,7 @@
                         </form>
                     </div>
                     <!-- Fin contenido modal olvide contraseña -->
+
                 </div>
             </div>
             <!-- Fin modal olvide contraseña -->
@@ -182,6 +185,7 @@
                         </form>
                     </div>
                     <!-- Fin contenido modal crear cuenta -->
+
                 </div>
             </div>
             <!-- Fin modal crear cuenta -->
@@ -198,17 +202,18 @@
             <label for="search-box" class="fas fa-search"></label>
         </div>
 
+        <!-- Contenedor del carrito -->
         <div class="cart-items-container">
-            <div class="cart-item">
+            <!-- Este es el item vacío del carrito, se utilizará como plantilla -->
+            <div class="cart-item hidden">
                 <span class="content"></span>
-                <img src="scr/imagenes/cepillo-barbero-fade-captain-cook-negro_512x512.webp" alt="">
                 <div class="content">
-                    <h3>Cepillo barbero</h3>
-                    <div class="price">$10.000/-</div>
+                    <h3></h3> <!-- Nombre del producto -->
+                    <div class="price"></div> <!-- Precio -->
                 </div>
             </div>
+            <!-- Fin carrito -->
         </div>
-        <!-- Fin carrito -->
 
         <!-- Inicio Logos redes sociales -->
         <div class="redessociales">
@@ -224,64 +229,59 @@
         </div>
         <!-- Fin Logos redes sociales -->
 
-    </header>
-
-
-    <!-- Chat container -->
-    <div class="fixed bottom-0 right-0 mb-4 mr-4">
-        <div id="chat-container" class="hidden fixed bottom-16 right-4 w-96">
-            <div class="bg-white shadow-md rounded-lg max-w-lg w-full">
-                <div class="p-4 border-b bg-green-500 text-white rounded-t-lg flex justify-between items-center">
-                    <p class="text-lg font-semibold">Bot de Barbería</p>
-                    <button id="close-chat"
-                        class="text-gray-300 hover:text-gray-400 focus:outline-none focus:text-gray-400">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </button>
-                </div>
-                <div id="chatbox" class="p-4 h-80 overflow-y-auto">
-                    <!-- Aquí se mostrarán los mensajes -->
-                    <div class="mb-2 text-right">
-                        <p class="bg-green-500 text-white rounded-lg py-2 px-4 inline-block">¡Hola! ¿En qué te puedo
-                            ayudar hoy?</p>
+        <!-- Chat WhatsApp -->
+        <div class="fixed bottom-0 right-0 mb-4 mr-4">
+            <div id="chat-container" class="hidden fixed bottom-16 right-4 w-96">
+                <div class="bg-white shadow-md rounded-lg max-w-lg w-full">
+                    <div class="p-4 border-b bg-green-500 text-white rounded-t-lg flex justify-between items-center">
+                        <p class="text-lg font-semibold">Chat Kingdom Barber</p>
+                        <button id="close-chat"
+                            class="text-gray-300 hover:text-gray-400 focus:outline-none focus:text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
                     </div>
-                    <div class="mb-2">
-                        <p class="bg-gray-200 text-gray-700 rounded-lg py-2 px-4 inline-block">¡Hola! ¿Tienes alguna
-                            consulta sobre nuestros servicios?</p>
+                    <div id="chatbox" class="p-4 h-80 overflow-y-auto">
+                        <!-- Aquí se mostrarán los mensajes -->
+                        <div class="mb-2 text-right">
+                            <p class="bg-green-500 text-white rounded-lg py-2 px-4 inline-block">¡Hola! ¿En qué te puedo
+                                ayudar hoy?</p>
+                        </div>
+                        <div class="mb-2">
+                            <p class="bg-gray-200 text-gray-700 rounded-lg py-2 px-4 inline-block">¡Hola! ¿Tienes alguna
+                                consulta sobre nuestros servicios?</p>
+                        </div>
                     </div>
-                </div>
-                <div class="p-4 border-t flex">
-                    <input id="user-input" type="text" placeholder="Escribe un mensaje"
-                        class="w-full px-3 py-2 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-green-500">
-                    <button id="send-button"
-                        class="bg-green-500 text-white px-4 py-2 rounded-r-md hover:bg-green-600 transition duration-300">Enviar</button>
+                    <div class="p-4 border-t flex">
+                        <input id="user-input" type="text" placeholder="Escribe un mensaje"
+                            class="w-full px-3 py-2 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                        <button id="send-button"
+                            class="bg-green-500 text-white px-4 py-2 rounded-r-md hover:bg-green-600 transition duration-300">Enviar</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 
 
-
-    <!-- Servicios -->
-
+    <!-- Inicio Tienda -->
     <h1 class="heading">Tienda</h1>
-
     <div class="text-center p-10">
         <h1 class="font-bold text-4xl mb-4 text-white">Tienda</h1>
     </div>
 
-    <!-- ✅ Grid Section - Starts Here 👇 -->
+    <!-- Comienzo de productos de tienda-->
     <section id="Projects"
         class="w-fit mx-auto grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
 
-        <!--   ✅ Product card 1 - Starts Here 👇 -->
+        <!--  Producto 1 -->
         <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
             <a href="#">
-                <img src="https://i.pinimg.com/736x/44/9a/7a/449a7a9bf89e2c73935ae84bdbc3499c.jpg"
-                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                <img src="https://i.pinimg.com/736x/44/9a/7a/449a7a9bf89e2c73935ae84bdbc3499c.jpg" alt="Product"
+                    class="h-80 w-72 object-cover rounded-t-xl" />
                 <div class="px-4 py-3 w-72">
                     <span class="text-gray-400 mr-3 uppercase text-xs">Dove</span>
                     <p class="text-lg font-bold text-black truncate block capitalize">Locion de ceratina</p>
@@ -301,13 +301,12 @@
                 </div>
             </a>
         </div>
-        <!--   🛑 Product card 1 - Ends Here  -->
 
-        <!--   ✅ Product card 2 - Starts Here 👇 -->
+        <!--  Producto 2 -->
         <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
             <a href="#">
-                <img src="https://i.pinimg.com/736x/0f/52/08/0f52080971f14bbe45542bc287de5e54.jpg"
-                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                <img src="https://i.pinimg.com/736x/0f/52/08/0f52080971f14bbe45542bc287de5e54.jpg" alt="Product"
+                    class="h-80 w-72 object-cover rounded-t-xl" />
                 <div class="px-4 py-3 w-72">
                     <span class="text-gray-400 mr-3 uppercase text-xs">Tahe</span>
                     <p class="text-lg font-bold text-black truncate block capitalize">Shampoo capilar</p>
@@ -327,13 +326,12 @@
                 </div>
             </a>
         </div>
-        <!--   🛑 Product card 2- Ends Here  -->
 
-        <!--   ✅ Product card 3 - Starts Here 👇 -->
+        <!--  Producto 3 -->
         <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
             <a href="#">
-                <img src="https://i.pinimg.com/736x/fb/ca/77/fbca770e0b0424d515333b4fb125ce9e.jpg"
-                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                <img src="https://i.pinimg.com/736x/fb/ca/77/fbca770e0b0424d515333b4fb125ce9e.jpg" alt="Product"
+                    class="h-80 w-72 object-cover rounded-t-xl" />
                 <div class="px-4 py-3 w-72">
                     <span class="text-gray-400 mr-3 uppercase text-xs">Wahl</span>
                     <p class="text-lg font-bold text-black truncate block capitalize">Maquina de corte dorada</p>
@@ -353,13 +351,12 @@
                 </div>
             </a>
         </div>
-        <!--   🛑 Product card 3 - Ends Here  -->
 
-        <!--   ✅ Product card 4 - Starts Here 👇 -->
+        <!--  Producto 4 -->
         <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
             <a href="#">
-                <img src="https://i.pinimg.com/736x/41/ea/44/41ea44124ff693fff4810a790f2397d9.jpg"
-                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                <img src="https://i.pinimg.com/736x/41/ea/44/41ea44124ff693fff4810a790f2397d9.jpg" alt="Product"
+                    class="h-80 w-72 object-cover rounded-t-xl" />
                 <div class="px-4 py-3 w-72">
                     <span class="text-gray-400 mr-3 uppercase text-xs">Remington</span>
                     <p class="text-lg font-bold text-black truncate block capitalize">Maquina de corte color carbon</p>
@@ -379,13 +376,12 @@
                 </div>
             </a>
         </div>
-        <!--   🛑 Product card 4 - Ends Here  -->
 
-        <!--   ✅ Product card 5 - Starts Here 👇 -->
+        <!--  Producto 5 -->
         <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
             <a href="#">
-                <img src="https://i.pinimg.com/736x/6d/e7/65/6de765929eab65922281f54777cb724e.jpg"
-                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                <img src="https://i.pinimg.com/736x/6d/e7/65/6de765929eab65922281f54777cb724e.jpg" alt="Product"
+                    class="h-80 w-72 object-cover rounded-t-xl" />
                 <div class="px-4 py-3 w-72">
                     <span class="text-gray-400 mr-3 uppercase text-xs">Shark</span>
                     <p class="text-lg font-bold text-black truncate block capitalize">Juego de tijeras en carbono</p>
@@ -405,13 +401,12 @@
                 </div>
             </a>
         </div>
-        <!--   🛑 Product card 5 - Ends Here  -->
 
-        <!--   ✅ Product card 6 - Starts Here 👇 -->
+        <!--  Producto 6 -->
         <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
             <a href="#">
-                <img src="https://i.pinimg.com/736x/d1/87/be/d187bef2e4b59a39e881bd28586a79e9.jpg"
-                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                <img src="https://i.pinimg.com/736x/d1/87/be/d187bef2e4b59a39e881bd28586a79e9.jpg" alt="Product"
+                    class="h-80 w-72 object-cover rounded-t-xl" />
                 <div class="px-4 py-3 w-72">
                     <span class="text-gray-400 mr-3 uppercase text-xs">Shark</span>
                     <p class="text-lg font-bold text-black truncate block capitalize">Tijera de corte plateada</p>
@@ -431,14 +426,12 @@
                 </div>
             </a>
         </div>
-        <!--   🛑 Product card 6 - Ends Here  -->
 
-
-           <!--   ✅ Product card 7 - Starts Here 👇 -->
+        <!--  Producto 7 -->
         <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
             <a href="#">
-                <img src="https://i.pinimg.com/736x/4b/b6/25/4bb6250b278f3bffa363d2fca3a1b703.jpg"
-                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                <img src="https://i.pinimg.com/736x/4b/b6/25/4bb6250b278f3bffa363d2fca3a1b703.jpg" alt="Product"
+                    class="h-80 w-72 object-cover rounded-t-xl" />
                 <div class="px-4 py-3 w-72">
                     <span class="text-gray-400 mr-3 uppercase text-xs">Fromm</span>
                     <p class="text-lg font-bold text-black truncate block capitalize">Barbera profesional</p>
@@ -458,13 +451,12 @@
                 </div>
             </a>
         </div>
-        <!--   🛑 Product card 7 - Ends Here  -->
 
-        <!--   ✅ Product card 8 - Starts Here 👇 -->
+        <!--  Producto 8 -->
         <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
             <a href="#">
-                <img src="https://i.pinimg.com/736x/92/9c/a6/929ca672ed0c596c8562c60a4a6eb9bd.jpg"
-                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                <img src="https://i.pinimg.com/736x/92/9c/a6/929ca672ed0c596c8562c60a4a6eb9bd.jpg" alt="Product"
+                    class="h-80 w-72 object-cover rounded-t-xl" />
                 <div class="px-4 py-3 w-72">
                     <span class="text-gray-400 mr-3 uppercase text-xs">Artist Clein</span>
                     <p class="text-lg font-bold text-black truncate block capitalize">Barbera en titanio</p>
@@ -484,14 +476,12 @@
                 </div>
             </a>
         </div>
-        <!--   🛑 Product card 8 - Ends Here  -->
 
-
-        <!--   ✅ Product card 9 - Starts Here 👇 -->
+        <!--  Producto 9 -->
         <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
             <a href="#">
-                <img src="https://i.pinimg.com/736x/ff/93/f9/ff93f92a6641874127c9054159a1b604.jpg"
-                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                <img src="https://i.pinimg.com/736x/ff/93/f9/ff93f92a6641874127c9054159a1b604.jpg" alt="Product"
+                    class="h-80 w-72 object-cover rounded-t-xl" />
                 <div class="px-4 py-3 w-72">
                     <span class="text-gray-400 mr-3 uppercase text-xs">Generica</span>
                     <p class="text-lg font-bold text-black truncate block capitalize">Cepillo para barba</p>
@@ -511,13 +501,12 @@
                 </div>
             </a>
         </div>
-        <!--   🛑 Product card 9 - Ends Here  -->
 
-        <!--   ✅ Product card 10 - Starts Here 👇 -->
+        <!--  Producto 10 -->
         <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
             <a href="#">
-                <img src="https://i.pinimg.com/736x/b7/3c/66/b73c662e9ac72846428449acccc2bb67.jpg"
-                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                <img src="https://i.pinimg.com/736x/b7/3c/66/b73c662e9ac72846428449acccc2bb67.jpg" alt="Product"
+                    class="h-80 w-72 object-cover rounded-t-xl" />
                 <div class="px-4 py-3 w-72">
                     <span class="text-gray-400 mr-3 uppercase text-xs">Crew</span>
                     <p class="text-lg font-bold text-black truncate block capitalize">Cera capilar</p>
@@ -537,13 +526,12 @@
                 </div>
             </a>
         </div>
-        <!--   🛑 Product card 10 - Ends Here  -->
 
-        <!--   ✅ Product card 11 - Starts Here 👇 -->
+        <!--  Producto 11 -->
         <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
             <a href="#">
-                <img src="https://i.pinimg.com/736x/5d/9b/7b/5d9b7bf020896bcccce1fd872b2b329d.jpg"
-                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                <img src="https://i.pinimg.com/736x/5d/9b/7b/5d9b7bf020896bcccce1fd872b2b329d.jpg" alt="Product"
+                    class="h-80 w-72 object-cover rounded-t-xl" />
                 <div class="px-4 py-3 w-72">
                     <span class="text-gray-400 mr-3 uppercase text-xs">Beradburys</span>
                     <p class="text-lg font-bold text-black truncate block capitalize">Cera de carbon</p>
@@ -563,13 +551,12 @@
                 </div>
             </a>
         </div>
-        <!--   🛑 Product card 11 - Ends Here  -->
 
-        <!--   ✅ Product card 12 - Starts Here 👇 -->
+        <!--  Producto 12 -->
         <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
             <a href="#">
-                <img src="https://i.pinimg.com/736x/1e/b6/8a/1eb68a5ec4265eea941b42438254a6ca.jpg"
-                    alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                <img src="https://i.pinimg.com/736x/1e/b6/8a/1eb68a5ec4265eea941b42438254a6ca.jpg" alt="Product"
+                    class="h-80 w-72 object-cover rounded-t-xl" />
                 <div class="px-4 py-3 w-72">
                     <span class="text-gray-400 mr-3 uppercase text-xs">Generica</span>
                     <p class="text-lg font-bold text-black truncate block capitalize">Cepillo profesional</p>
@@ -589,20 +576,11 @@
                 </div>
             </a>
         </div>
-        <!--   🛑 Product card 12 - Ends Here  -->
-        
-
-
-
-
-    <!-- 🛑 Grid Section - Ends Here -->
-
-</section>
-
-
-
-
+        <!-- Fin de productos de tienda-->
+         
+    </section>
     <!-- Fin Tienda -->
+
 
 
     <!-- inicio footer -->

@@ -13,7 +13,6 @@
 
 </head>
 
-
 <body class="Alkatra">
     <header class="header">
         <a href="index.html#home" class="logo max-w-xs transition duration-150 ease-in-out hover:scale-110">
@@ -33,6 +32,7 @@
             <div id="authentication-modal" aria-hidden="true"
                 class="hidden overflow-x-hidden overflow-y-auto fixed h-modal md:h-full top-4 left-0 right-0 md:inset-0 z-50 justify-center items-center">
                 <div class="relative w-full max-w-md px-4 h-full md:h-auto">
+
                     <!-- Inicio contenido moral para ingresar -->
                     <div class="bg-white rounded-lg shadow relative dark:bg-gray-700">
                         <div class="flex justify-end p-2">
@@ -89,6 +89,7 @@
                         </form>
                     </div>
                     <!-- Fin contenido moral para ingresar -->
+
                 </div>
             </div>
             <!-- Fin boton modal para Ingresar -->
@@ -127,6 +128,7 @@
                         </form>
                     </div>
                     <!-- Fin contenido modal olvide contraseña -->
+
                 </div>
             </div>
             <!-- Fin modal olvide contraseña -->
@@ -182,6 +184,7 @@
                         </form>
                     </div>
                     <!-- Fin contenido modal crear cuenta -->
+
                 </div>
             </div>
             <!-- Fin modal crear cuenta -->
@@ -203,7 +206,6 @@
             <!-- Este es el item vacío del carrito, se utilizará como plantilla -->
             <div class="cart-item hidden">
                 <span class="content"></span>
-                <img src="scr/imagenes/cepillo-barbero-fade-captain-cook-negro_512x512.webp" alt="">
                 <div class="content">
                     <h3></h3> <!-- Nombre del producto -->
                     <div class="price"></div> <!-- Precio -->
@@ -211,7 +213,6 @@
             </div>
             <!-- Fin carrito -->
         </div>
-
 
         <!-- Inicio Logos redes sociales -->
         <div class="redessociales">
@@ -227,44 +228,42 @@
         </div>
         <!-- Fin Logos redes sociales -->
 
-    </header>
-
-
-    <!-- Chat container -->
-    <div class="fixed bottom-0 right-0 mb-4 mr-4">
-        <div id="chat-container" class="hidden fixed bottom-16 right-4 w-96">
-            <div class="bg-white shadow-md rounded-lg max-w-lg w-full">
-                <div class="p-4 border-b bg-green-500 text-white rounded-t-lg flex justify-between items-center">
-                    <p class="text-lg font-semibold">Bot de Barbería</p>
-                    <button id="close-chat"
-                        class="text-gray-300 hover:text-gray-400 focus:outline-none focus:text-gray-400">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </button>
-                </div>
-                <div id="chatbox" class="p-4 h-80 overflow-y-auto">
-                    <!-- Aquí se mostrarán los mensajes -->
-                    <div class="mb-2 text-right">
-                        <p class="bg-green-500 text-white rounded-lg py-2 px-4 inline-block">¡Hola! ¿En qué te puedo
-                            ayudar hoy?</p>
+        <!-- Chat WhatsApp -->
+        <div class="fixed bottom-0 right-0 mb-4 mr-4">
+            <div id="chat-container" class="hidden fixed bottom-16 right-4 w-96">
+                <div class="bg-white shadow-md rounded-lg max-w-lg w-full">
+                    <div class="p-4 border-b bg-green-500 text-white rounded-t-lg flex justify-between items-center">
+                        <p class="text-lg font-semibold">Chat Kingdom Barber</p>
+                        <button id="close-chat"
+                            class="text-gray-300 hover:text-gray-400 focus:outline-none focus:text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
                     </div>
-                    <div class="mb-2">
-                        <p class="bg-gray-200 text-gray-700 rounded-lg py-2 px-4 inline-block">¡Hola! ¿Tienes alguna
-                            consulta sobre nuestros servicios?</p>
+                    <div id="chatbox" class="p-4 h-80 overflow-y-auto">
+                        <!-- Aquí se mostrarán los mensajes -->
+                        <div class="mb-2 text-right">
+                            <p class="bg-green-500 text-white rounded-lg py-2 px-4 inline-block">¡Hola! ¿En qué te puedo
+                                ayudar hoy?</p>
+                        </div>
+                        <div class="mb-2">
+                            <p class="bg-gray-200 text-gray-700 rounded-lg py-2 px-4 inline-block">¡Hola! ¿Tienes alguna
+                                consulta sobre nuestros servicios?</p>
+                        </div>
                     </div>
-                </div>
-                <div class="p-4 border-t flex">
-                    <input id="user-input" type="text" placeholder="Escribe un mensaje"
-                        class="w-full px-3 py-2 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-green-500">
-                    <button id="send-button"
-                        class="bg-green-500 text-white px-4 py-2 rounded-r-md hover:bg-green-600 transition duration-300">Enviar</button>
+                    <div class="p-4 border-t flex">
+                        <input id="user-input" type="text" placeholder="Escribe un mensaje"
+                            class="w-full px-3 py-2 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                        <button id="send-button"
+                            class="bg-green-500 text-white px-4 py-2 rounded-r-md hover:bg-green-600 transition duration-300">Enviar</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 
 
 
@@ -278,34 +277,25 @@
     <!-- Fin Nosotros -->
 
 
+
     <!-- Inicio Servicios -->
-
-
-
     <section class="menu" id="menu">
-
-
         <h1 class="heading">Servicios</h1>
-
         <p>En nuestra barbería ofrecemos una amplia variedad de servicios de corte de cabello, diseñados para adaptarse
             a tu estilo y personalidad.</p>
-
         <div>
             <img src="https://i.pinimg.com/control2/736x/d6/c7/7f/d6c77f64ee023a94422f132f269b7d32.jpg" alt="Corte1">
             <img src="https://i.pinimg.com/736x/3b/62/7c/3b627c579eb14ff8108a656ad0b7498a.jpg" alt="Corte2">
-            <img src="https://i.pinimg.com/control2/736x/fe/c1/21/fec121b70ea9b6e7a6b33459a91da151.jpg"
-                alt="Corte diseño">
-            <img src="https://i.pinimg.com/control2/736x/ac/1a/fc/ac1afcd603ed2fa236941cf3cb99fcdd.jpg"
-                alt="Corte niños">
-            <img src="https://i.pinimg.com/736x/79/b1/82/79b1826eda1675b49e65f3e69f8e9e5c.jpg" alt="Corte cejas">
+            <img src="https://i.pinimg.com/control2/736x/fe/c1/21/fec121b70ea9b6e7a6b33459a91da151.jpg" alt="Diseño">
+            <img src="https://i.pinimg.com/control2/736x/ac/1a/fc/ac1afcd603ed2fa236941cf3cb99fcdd.jpg" alt="Niños">
+            <img src="https://i.pinimg.com/736x/79/b1/82/79b1826eda1675b49e65f3e69f8e9e5c.jpg" alt="Cejas">
         </div>
-
         <a href="servicios.html"><button type='button'
                 class='items-center py-2.5 px-6 text-lg rounded-lg bg-indigo-700 text-white cursor-pointer font-semibold  shadow-xs transition-all duration-400 hover:bg-indigo-600 hover:scale-110'>Ver
                 mas servicios</button></a>
-
     </section>
     <!-- Fin servicios -->
+
 
 
     <!-- Inicio sección de citas -->
@@ -328,7 +318,6 @@
                     <label for="nombre" class="block mb-2 text-sm text-gray-600">Nombre:</label>
                     <input type="text" id="nombre" class="w-full p-2 border rounded-lg mb-4" placeholder="Tu nombre"
                         required>
-
                     <label for="hora" class="block mb-2 text-sm text-gray-600">Hora:</label>
                     <select id="hora" class="w-full p-2 border rounded-lg mb-4 bg-gray-50 text-gray-800">
                         <!-- Las horas disponibles se generarán dinámicamente con JavaScript -->
@@ -346,16 +335,12 @@
     <!-- Fin seccion de citas -->
 
 
+
     <!-- Inicio Tienda -->
-
     <section class="products" id="products">
-
-
         <h1 class="heading">Tienda</h1>
-
         <p>¡Dale un vistazo a nuestra tienda y convierte tu día a día en todo un ritual de estilo y cuidado! <br> Porque
             sabemos que te importa cómo te ves, y en Kingdom Barber nos encargamos de que siempre luzcas bien.</p>
-
         <div>
             <img src="https://i.pinimg.com/control2/736x/ea/64/34/ea6434f2f95ba9707bd73cb52bbefa9b.jpg" alt="Producto1">
             <img src="https://i.pinimg.com/736x/af/c8/b9/afc8b9483874ea9695ac045f69ab93cd.jpg" alt="Producto2">
@@ -363,14 +348,12 @@
             <img src="https://i.pinimg.com/736x/41/ea/44/41ea44124ff693fff4810a790f2397d9.jpg" alt="Producto4">
             <img src="https://i.pinimg.com/736x/3c/38/b1/3c38b1aeb369c155d177ca67c2dc639a.jpg" alt="Producto5">
         </div>
-
-        <a href="tienda.html"><button type='button' class='items-center py-2.5 px-6 text-lg rounded-lg bg-indigo-700 text-white cursor-pointer font-semibold  shadow-xs transition-all duration-400 hover:bg-indigo-600 hover:scale-110'>Ingresar a la tienda</button></a>
-
+        <a href="tienda.html"><button type='button'
+                class='items-center py-2.5 px-6 text-lg rounded-lg bg-indigo-700 text-white cursor-pointer font-semibold  shadow-xs transition-all duration-400 hover:bg-indigo-600 hover:scale-110'>Ingresar
+                a la tienda</button></a>
     </section>
-
-
-
     <!-- Fin Tienda -->
+
 
 
     <!-- Inicio contactos -->
@@ -378,6 +361,8 @@
         <h1 class="heading">Contactos<span></span></h1>
         <div class="box-container">
             <div class="row">
+
+                <!-- Barbero1 -->
                 <div class="barber">
                     <div class="image">
                         <img src="https://i.pinimg.com/736x/ef/bf/47/efbf478fb5120cab84983bf14b12a062.jpg"
@@ -385,8 +370,8 @@
                     </div>
                     <div class="content">
                         <h3>Juan Pérez</h3>
-                        <p><strong>Email:</strong> juan.perez@email.com</p>
-                        <p><strong>Teléfono:</strong> +123 456 7890</p>
+                        <p><strong>Email:</strong> juan.perez@Kingdombarber.com</p>
+                        <p><strong>Teléfono:</strong> 3218767226</p>
                         <p><strong>Instagram:</strong> @juanperez_barber</p>
                         <!-- Redes Sociales en Vertical -->
                         <div class="social-links">
@@ -400,17 +385,17 @@
                     </div>
                 </div>
 
+                <!-- Barbero2 -->
                 <div class="barber">
                     <div class="image">
                         <img src="https://i.pinimg.com/736x/61/84/f8/6184f814c0e45527e449f9a5ba8ad6d4.jpg"
                             alt="Barbero 2">
                     </div>
                     <div class="content">
-                        <h3>Cndidan Argaez</h3>
-                        <p><strong>Email:</strong> ana.garcia@email.com</p>
-                        <p><strong>Teléfono:</strong> +123 456 7891</p>
-                        <p><strong>Instagram:</strong> @anagarcia_barber</p>
-
+                        <h3>Stiven Garcia</h3>
+                        <p><strong>Email:</strong> stiven.garcia@Kingdombarber.com</p>
+                        <p><strong>Teléfono:</strong> 3128753993</p>
+                        <p><strong>Instagram:</strong> @stivengarcia_barber</p>
                         <!-- Redes Sociales en Vertical -->
                         <div class="social-links">
                             <a href="https://wa.me/1234567891" target="_blank" class="social-icon">
@@ -423,6 +408,7 @@
                     </div>
                 </div>
 
+                <!-- Barbero3 -->
                 <div class="barber">
                     <div class="image">
                         <img src="https://i.pinimg.com/control2/736x/29/7f/18/297f18718301167ae4f4a193f84f772c.jpg"
@@ -430,10 +416,9 @@
                     </div>
                     <div class="content">
                         <h3>Carlos López</h3>
-                        <p><strong>Email:</strong> carlos.lopez@email.com</p>
-                        <p><strong>Teléfono:</strong> +123 456 7892</p>
+                        <p><strong>Email:</strong> carlos.lopez@Kingdombarber.com</p>
+                        <p><strong>Teléfono:</strong> 3139875632</p>
                         <p><strong>Instagram:</strong> @carloslopez_barber</p>
-
                         <!-- Redes Sociales en Vertical -->
                         <div class="social-links">
                             <a href="https://wa.me/1234567892" target="_blank" class="social-icon">
@@ -446,17 +431,17 @@
                     </div>
                 </div>
 
+                <!-- Barbero4 -->
                 <div class="barber">
                     <div class="image">
                         <img src="https://i.pinimg.com/control2/736x/a5/3a/ab/a53aab17831a0364da8841de99c7afd9.jpg"
                             alt="Barbero 4">
                     </div>
                     <div class="content">
-                        <h3>Carlos López</h3>
-                        <p><strong>Email:</strong> carlos.lopez@email.com</p>
-                        <p><strong>Teléfono:</strong> +123 456 7892</p>
-                        <p><strong>Instagram:</strong> @carloslopez_barber</p>
-
+                        <h3>Efrain Estrada</h3>
+                        <p><strong>Email:</strong> efrain.estrada@Kingdombarber.com</p>
+                        <p><strong>Teléfono:</strong> 3016529203</p>
+                        <p><strong>Instagram:</strong> @efrainestrada_barber</p>
                         <!-- Redes Sociales en Vertical -->
                         <div class="social-links">
                             <a href="https://wa.me/1234567892" target="_blank" class="social-icon">
@@ -475,12 +460,14 @@
     <!-- Fin contactos -->
 
 
+
     <!-- Inicio Mapa -->
     <section class="content mapa" id="mapa">
         <iframe src="https://www.google.com/maps/d/embed?mid=1UghUE7HuOiYwNQYHlobXSNH_d7Oc10Q&ehbc=2E312F&noprof=1"
             width="100%" height="350"></iframe>
     </section>
     <!-- Fin Mapa -->
+
 
 
     <!-- inicio footer -->
@@ -530,6 +517,7 @@
         </div>
     </footer>
     <!-- fin de footer -->
+
 
     <script src="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.bundle.js"></script>
     <script src="scrip.js"></script>

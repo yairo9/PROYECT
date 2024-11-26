@@ -21,7 +21,7 @@
             <a href="index.html#home">Nosotros</a>
             <a href="servicios.html">Servicios</a>
             <a href="index.html#citas" class="citas-btn">Citas</a>
-            <a href="index.html#products">Tienda</a>
+            <a href="tienda.html">Tienda</a>
             <a href="index.html#contact">Contactos</a>
             <a href="index.html#mapa">Sedes</a>
             <a href="index.html#registro" class="registro-btn" data-modal-target="authentication-modal"
@@ -32,6 +32,7 @@
             <div id="authentication-modal" aria-hidden="true"
                 class="hidden overflow-x-hidden overflow-y-auto fixed h-modal md:h-full top-4 left-0 right-0 md:inset-0 z-50 justify-center items-center">
                 <div class="relative w-full max-w-md px-4 h-full md:h-auto">
+
                     <!-- Inicio contenido moral para ingresar -->
                     <div class="bg-white rounded-lg shadow relative dark:bg-gray-700">
                         <div class="flex justify-end p-2">
@@ -88,6 +89,7 @@
                         </form>
                     </div>
                     <!-- Fin contenido moral para ingresar -->
+
                 </div>
             </div>
             <!-- Fin boton modal para Ingresar -->
@@ -126,6 +128,7 @@
                         </form>
                     </div>
                     <!-- Fin contenido modal olvide contraseña -->
+
                 </div>
             </div>
             <!-- Fin modal olvide contraseña -->
@@ -181,6 +184,7 @@
                         </form>
                     </div>
                     <!-- Fin contenido modal crear cuenta -->
+
                 </div>
             </div>
             <!-- Fin modal crear cuenta -->
@@ -197,17 +201,18 @@
             <label for="search-box" class="fas fa-search"></label>
         </div>
 
+        <!-- Contenedor del carrito -->
         <div class="cart-items-container">
-            <div class="cart-item">
+            <!-- Este es el item vacío del carrito, se utilizará como plantilla -->
+            <div class="cart-item hidden">
                 <span class="content"></span>
-                <img src="scr/imagenes/cepillo-barbero-fade-captain-cook-negro_512x512.webp" alt="">
                 <div class="content">
-                    <h3>Cepillo barbero</h3>
-                    <div class="price">$10.000/-</div>
+                    <h3></h3> <!-- Nombre del producto -->
+                    <div class="price"></div> <!-- Precio -->
                 </div>
             </div>
+            <!-- Fin carrito -->
         </div>
-        <!-- Fin carrito -->
 
         <!-- Inicio Logos redes sociales -->
         <div class="redessociales">
@@ -223,46 +228,46 @@
         </div>
         <!-- Fin Logos redes sociales -->
 
-    </header>
-
-
-    <!-- Chat container -->
-    <div class="fixed bottom-0 right-0 mb-4 mr-4">
-        <div id="chat-container" class="hidden fixed bottom-16 right-4 w-96">
-            <div class="bg-white shadow-md rounded-lg max-w-lg w-full">
-                <div class="p-4 border-b bg-green-500 text-white rounded-t-lg flex justify-between items-center">
-                    <p class="text-lg font-semibold">Bot de Barbería</p>
-                    <button id="close-chat"
-                        class="text-gray-300 hover:text-gray-400 focus:outline-none focus:text-gray-400">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </button>
-                </div>
-                <div id="chatbox" class="p-4 h-80 overflow-y-auto">
-                    <!-- Aquí se mostrarán los mensajes -->
-                    <div class="mb-2 text-right">
-                        <p class="bg-green-500 text-white rounded-lg py-2 px-4 inline-block">¡Hola! ¿En qué te puedo
-                            ayudar hoy?</p>
+        <!-- Chat WhatsApp -->
+        <div class="fixed bottom-0 right-0 mb-4 mr-4">
+            <div id="chat-container" class="hidden fixed bottom-16 right-4 w-96">
+                <div class="bg-white shadow-md rounded-lg max-w-lg w-full">
+                    <div class="p-4 border-b bg-green-500 text-white rounded-t-lg flex justify-between items-center">
+                        <p class="text-lg font-semibold">Chat Kingdom Barber</p>
+                        <button id="close-chat"
+                            class="text-gray-300 hover:text-gray-400 focus:outline-none focus:text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
                     </div>
-                    <div class="mb-2">
-                        <p class="bg-gray-200 text-gray-700 rounded-lg py-2 px-4 inline-block">¡Hola! ¿Tienes alguna
-                            consulta sobre nuestros servicios?</p>
+                    <div id="chatbox" class="p-4 h-80 overflow-y-auto">
+                        <!-- Aquí se mostrarán los mensajes -->
+                        <div class="mb-2 text-right">
+                            <p class="bg-green-500 text-white rounded-lg py-2 px-4 inline-block">¡Hola! ¿En qué te puedo
+                                ayudar hoy?</p>
+                        </div>
+                        <div class="mb-2">
+                            <p class="bg-gray-200 text-gray-700 rounded-lg py-2 px-4 inline-block">¡Hola! ¿Tienes alguna
+                                consulta sobre nuestros servicios?</p>
+                        </div>
                     </div>
-                </div>
-                <div class="p-4 border-t flex">
-                    <input id="user-input" type="text" placeholder="Escribe un mensaje"
-                        class="w-full px-3 py-2 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-green-500">
-                    <button id="send-button"
-                        class="bg-green-500 text-white px-4 py-2 rounded-r-md hover:bg-green-600 transition duration-300">Enviar</button>
+                    <div class="p-4 border-t flex">
+                        <input id="user-input" type="text" placeholder="Escribe un mensaje"
+                            class="w-full px-3 py-2 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                        <button id="send-button"
+                            class="bg-green-500 text-white px-4 py-2 rounded-r-md hover:bg-green-600 transition duration-300">Enviar</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 
-    <!-- Servicios -->
+
+
+    <!-- Inicio Servicios -->
     <section class="home" id="home">
         <div class="bg-black dark:bg-gray-800 h-screen h-full py-6 sm:py-8 lg:py-12">
             <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
@@ -308,6 +313,7 @@
         </div>
     </section>
     
+    <!-- Inicio Servicios - Cuidado Facial -->
     <section class="home" id="home">
         <div class="bg-black dark:bg-gray-800 h-screen h-full py-6 sm:py-8 lg:py-12">
             <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
@@ -377,12 +383,12 @@
         <button id="close-modal" class="mt-4 py-2 px-4 bg-red-600 text-white rounded-lg">Cerrar</button>
     </div>
 </div>
-
     <!-- Fin Servicios -->
+
+
 
     <!-- inicio footer -->
     <footer class="footer">
-
         <div class="footer-bottom">
             <p>&copy; 2024 Kingdom Barber - Todos los derechos reservados.</p>
         </div>

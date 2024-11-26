@@ -207,25 +207,6 @@ body {
     padding: 100px;
 }
 
-.home .content {
-    max-width: 60rem;
-}
-
-.home .content h3 {
-    font-size: 5rem;
-    text-transform: uppercase;
-    color: #dbc013 ;
-}
-
-.home .content p {
-    font-size: 1.6rem;
-    font-weight: lighter;
-    line-height: 1.8;
-    padding: 1rem 0;
-    color:#ffffff;
-
-}
-
 .redessociales{
     position: fixed;
     z-index: 999;
@@ -239,42 +220,6 @@ body {
 
 .redessociales img:hover{
     transform: scale(1.1);
-}
-
-/* Sección Nosotros */
-.about .row {
-    align-items: baseline;
-    display: flex;
-    background: var(--black);
-    flex-wrap: wrap; /* Permite que los elementos se ajusten */
-
-}
-
-.about .row .image {
-    flex: 1 1 45rem; /* Ocupa espacio adaptable */
-}
-
-.about .row .image img {
-    width: 25%;
-    align-items: baseline;
-    position: absolute;
-}
-
-.about .row .content {
-    flex: 1 2 45rem;
-    padding: 2rem;
-}
-
-.about .row .content h3 {
-    font-size: 3rem;
-    color: #fff;
-}
-
-.about .row .content p {
-    font-size: 1.6rem;
-    color: #ccc;
-    padding: 1rem 0;
-    line-height: 1.8;
 }
 
 /* Sección de servicios */
